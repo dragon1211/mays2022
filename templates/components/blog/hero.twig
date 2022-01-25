@@ -1,0 +1,10 @@
+<div class="blog-heros">
+	{% for hero in heros %}
+		<a class="blog-hero-item" href="{{ hero.link }}">
+			<picture>
+				<img src="{{ hero.master_object.thumbnail }}">
+			</picture>
+			<div class="ttl"><strong>{{ hero.title }}</strong></div>
+		</a>
+	{% endfor %}
+</div>

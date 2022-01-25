@@ -1,0 +1,5 @@
+<ul class="blog-tag-list">
+	{% for tag in tags %}
+		<li><a href="{{ tag.link }}">{{ tag.name }} <small>{{ tag.count }}</small></a></li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+<a class="blog-index-item" href="{{ post.link }}" title="{{ post.title }}">
+  <article class="index {{post.post_type}}">
+    <picture>
+      <img src="{{ post.thumbnail.src('medium') }}" srcset="{{ post.thumbnail.srcset }}" sizes="{{ post.thumbnail.sizes }}" alt="{{ post.title }}">
+    </picture>
+    <div class="txt">
+      <time>{{ post.date('Y.m.d') }}</time>
+      <p><strong>{{ post.title }}</strong></p>
+      <ul>
+        {% for tag in post.terms('blog_tag') %}
+        <li>{{ tag.name }}</li>
+        {% endfor %}
+      </ul>
+    </div><!-- .txt -->
+  </article>
+</a>

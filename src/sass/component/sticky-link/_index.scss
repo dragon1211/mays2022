@@ -1,0 +1,52 @@
+a.sticky-link {
+	position: fixed;
+	width: 218px;
+	height: 70px;
+	background: $gold-brown;
+	border: 1px solid transparent;
+	border-top: none;
+	color: #fff;
+	display: block;
+	padding: 12px 4px 0;
+	z-index: 500;
+	> i, > strong {
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	> i {
+		font-weight: 500;
+		font-style: normal;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 4px;
+		text-indent: 4px;
+		&:before, &:after {
+			content: '—';
+			display: inline-block;
+		}
+		&:before { margin: 0 4px 0 0; }
+		&:after { margin: 0 0 0 4px; }
+	}
+	> strong {
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 24px;
+		letter-spacing: 2px;
+		margin: 2px 0 0;
+		text-indent: 2px;
+	}
+}
+
+@media (min-width: 641px) {
+	a.sticky-link {
+		right: -74px;
+		top: calc(50% - 35px);
+		box-shadow: 0 0 8px rgba(0,0,0,.2);
+		transform: rotate(90deg);
+		&:hover {
+			background: #c5bdb0;
+		}
+	}
+	.sticky-link-space { display: none; }
+}

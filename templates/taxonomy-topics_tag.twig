@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/common/2020.css">
+<link rel="stylesheet" href="/css/common/sp_2020.css" media="(max-width: 640px)">
+<link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog.css">
+<link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog-md.css" media="(min-width: 641px)">
+<div class="page-header" style="background-image: url(/images/concept/header.jpg)">
+	<h1><i>Topics</i><strong>コンテンツ記事</strong></h1>
+</div><!-- .page-header -->
+<section class="topics-index-sect">
+	<div class="container">
+		<h2 class="archive-sect-heading">{{ title }}</h2>
+		{% if posts | length %}
+			<div class="topics-index">
+				{% for post in posts %}
+					{% include "components/topics/index.twig" %}
+				{% endfor %}
+			</div><!-- .topics-index -->
+			{{ pagination }}
+		{% else %}
+			<p class="nopost">該当する記事は見つかりませんでした。</p>
+		{% endif %}
+	</div><!-- .container -->
+</section>

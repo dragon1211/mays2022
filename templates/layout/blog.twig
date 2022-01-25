@@ -1,0 +1,12 @@
+{% if heros | length == 5 %}
+	{% include 'components/blog/hero.twig' %}
+{% endif %}
+<div class="_2column">
+	<div class="main-column">
+		{% block content %}{% endblock %}
+	</div><!-- .main-column -->
+	<div class="sub-column">
+		<aside class="blog-sidebar" role="complementary">{{ sidebar }}</aside>
+		{# <script src="/wp-content/themes/mays2020/assets/blogWidget.js"></script> #}
+	</div><!-- .sub-column -->
+</div><!-- .container -->

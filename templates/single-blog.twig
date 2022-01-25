@@ -1,0 +1,30 @@
+{% extends 'layout/blog.twig' %}
+
+{% block content %}
+	<article class="blog-single">
+		<h1>{{ post.title }}</h1>
+		{% include 'components/blog/meta.twig' %}
+		{% include 'components/blog/tag.twig' %}
+		<div class="blog-body-content">{{ post.content }}</div>
+		<footer>
+			{% include 'components/sns.twig' %}
+			{% include 'components/blog/meta.twig' %}
+			{% include 'components/blog/tag.twig' %}
+		</footer>
+	</article>
+	<script src="/wp-content/themes/mays2020/assets/blogShare.js"></script>
+	{# Related posts #}
+	{% if related_posts %}
+		<aside class="related-posts">
+			<h2 class="sect-title-sub"><i>Related Posts</i><small>オススメの記事</small></h2>
+			<div class="blog-index">
+				{% for rpost in related_posts %}
+					{% include 'components/blog/index.twig' with {'post': rpost} only %}
+				{% endfor %}
+			</div><!-- .blog-index -->
+		</aside>
+	{% endif %}
+	<div class="blog-back-to-index">
+		<a href="/column/" class="button" title="コラム一覧"><span>All Columns</span><span>コラム一覧</span></a>
+	</div><!-- .blog-back-to-index -->
+{% endblock %}

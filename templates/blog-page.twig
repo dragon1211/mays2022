@@ -1,0 +1,8 @@
+{% extends 'layout/blog.twig' %}
+
+{% block content %}
+	{{ post.content }}
+	<div class="blog-back-to-index">
+		<a href="/column/" class="button" title="コラム一覧"><span>All Columns</span><span>コラム一覧</span></a>
+	</div><!-- .blog-back-to-index -->
+{% endblock %}

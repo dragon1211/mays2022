@@ -1,0 +1,18 @@
+<article class="topics-index-item">
+	<a class="topics-index-item-link mincho antialiased" href="{{ post.link }}">
+		<div class="thumb">
+			<picture>
+				{% if post.thumbnail %}
+					<img src="{{ post.thumbnail.src }}" srcset="{{ post.thumbnail.srcset }}" sizes="{{ post.thumbnail.img_sizes }}">
+				{% else %}
+					<img src="/images/concept/topics-thumb.svg" />
+				{% endif %}
+			</picture>
+			<span>{{ post.terms('topics_tag')[0].title }}</span>
+		</div>
+		<time class="published garamond">{{ post.date('Y.m.d') }}</time>
+		<h1 class="title">{{ post.title }}</h1>
+		<p class="excerpt">{{ post.preview.chars(100).read_more('').strip(false) }}</p>
+		<div class="read garamond"><span>Read more</span></div>
+	</a>
+</article>

@@ -1,0 +1,234 @@
+@import "../variables";
+@charset "utf-8";
+
+/* Point */
+.service-points {
+	margin: 90px 0 0;
+}
+.service-point-item {
+	&:nth-child(n+2) { margin-top: 120px; }
+}
+.point-head {
+	> .rh {
+		font-size: 20px;
+		line-height: 32px;
+		> span { font-size: 36px; }
+	}
+	> h3 {
+		font-size: 40px;
+		line-height: 56px;
+		margin: 20px 0 0;
+		text-align: center
+	}
+}
+.point-body {
+	margin: 44px 0 0;
+	> .pic-txt {
+		> picture {
+			width: 100%;
+			> img { width: 100%; }
+		}
+		> p { margin: 44px 0 0; }
+	}
+	> .point-body-extra { margin: 80px 0 0; }
+}
+
+/*
+ * Index as servive
+ */
+
+/* Introduction */
+section.service-intro {
+	padding: 176px 0 88px;
+	.iframe-wrapper {
+		margin: 80px auto 0;
+	}
+}
+
+/* Points */
+section.service-point {
+	padding: 88px 0 ;
+}
+
+/* Points */
+.service-point-1-extra {
+	> a.button:last-child { margin: 56px 0 0; }
+}
+
+/* Detail */
+.service-detail { padding: 88px 0 50px; }
+.service-detail-banners {
+	margin: 40px 0 0;
+}
+a.service-detail-banner {
+	margin: 8px 0 0;
+	padding: 50px 10px 46px;
+	> i {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	> strong {
+		font-size: 20px;
+		line-height: 32px
+	}
+}
+
+/* Pick-up */
+section.service-pickup {
+	padding: 50px 0 180px;
+}
+
+/**
+ * Business
+ */
+
+/* Agency & Owner */
+section.business-agency { padding: 176px 0 88px; }
+section.business-owner { padding: 88px 0 176px; }
+
+.business-item-txt {
+	> .rh {
+		font-size: 24px;
+		text-align: center;
+		> span {
+			padding: 20px 16px;
+			&:before, &:after {
+				width: 28px;
+				height: 28px;
+				border-width: 2px;
+			}
+			&:before { left: -16px; }
+			&:after { right: -16px; }
+		}
+	}
+	> h2 {
+		font-size: 48px;
+		line-height: 72px;
+		margin: 16px 0 0;
+		text-align: center;
+		> br { display: none; }
+	}
+}
+.business-item-pic {
+	margin: 64px 0 0;
+}
+
+/* Point */
+section.business-point {
+	padding: 176px 0 180px;
+}
+
+/**
+ * Lease
+ */
+
+/* Introduction */
+section.lease-intro { padding: 176px 0; }
+
+/* Point */
+section.lease-point { padding: 176px 0; }
+
+/* Contract */
+section.lease-contract {
+	.popuptitle {
+		img {
+			width: 386px;
+			height: 25px;
+		}
+	}
+}
+
+/**
+ * Plan
+ */
+section.plan-sample {
+	padding: 176px 0;
+}
+section.plan-package {
+	padding: 0 0 180px;
+	ul.notes {
+		font-size: 20px;
+		line-height: 30px;
+		margin: 64px auto 0;
+		padding-left: 30px;
+		> li {
+			text-indent: -25px;
+		}
+	}
+}
+
+.plan-head {
+	> .txt {
+		padding: 80px 40px;
+		p { line-height: 44px; }
+	}
+}
+.plan-head-heading {
+	padding: 44px 0 0 64px;
+	> .num {
+		font-size: 36px;
+		&:after {
+			left: 59px;
+			height: 48px;
+		}
+	}
+	> h2 {
+		font-size: 64px;
+		line-height: 70px;
+		> strong {
+			> small {
+				font-size: 21px;
+			}
+		}
+	}
+}
+
+h4.plan-heading-sub {
+	font-size: 21px;
+}
+div.plan-head + h4.plan-heading-sub{ margin-top: 64px; }
+h3.sect-title-sub + h4.plan-heading-sub { margin-top: 50px; }
+picture.plan-furniture + h4.plan-heading-sub { margin-top: 50px; }
+
+table.plan-pdf-table {
+	th {
+		font-size: 21px;
+		padding: 19px 24px 15px 0;
+		span.gothic { font-size: 20px; }
+	}
+	td {
+		padding: 24px 24px 24px 0;
+		&:first-child { width: 44%; font-size: 21px; }
+		&:nth-child(2) { width: 40%;font-size: 21px; }
+		&:nth-child(n+3) { min-width: 95px; text-align: center; }
+	}
+}
+h3.sect-title-sub + table.plan-pdf-table {margin-top: 60px; }
+h4.plan-heading-sub + table.plan-pdf-table { margin-top: 12px; }
+
+img.plan-thumb-option {
+	width: 96px;
+	height: 96px;
+}
+
+a.plan-dl-link {
+ > svg {
+ 	width: 36px;
+ 	height: 36px;
+ 	> use {
+ 		transform: scale(1.5);
+ 	}
+ }
+}
+
+.plan-package-link {
+	margin: 96px 0 0;
+	> a.button { margin: 48px 0 0; }
+}
+
+/**
+ * Product & Brand
+ */
+section.product-brand {
+	padding-top: 176px;
+}

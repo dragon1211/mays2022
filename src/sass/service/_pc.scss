@@ -1,0 +1,89 @@
+/* Point */
+.service-point-item {
+	display: flex;
+	&:nth-child(odd) { margin-right: 87px; }
+	&:nth-child(even) { margin-left: 87px; }
+	> .point-head { width: 67px; }
+	> .point-body { width: calc(100% - 107px); margin: 70px 0 0 40px; }
+}
+.point-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> h3 {
+		text-align: left;
+		-ms-writing-mode: tb-rl;
+		writing-mode: vertical-rl;
+	}
+}
+.point-body {
+	> .pic-txt {
+		display: flex;
+		align-items: center;
+		> picture { width: 328px; }
+		> p {
+			width: calc(100% - 356px);
+			margin: 0 0 0 28px;
+		}
+	}
+	> .point-body-extra { margin: 40px 0 0; }
+}
+
+/*
+ * Index as servive
+ */
+
+/* Points */
+.service-point-1-extra {
+	text-align: center;
+	> a.button { margin: 0 13px; }
+}
+
+/* Detail */
+.service-detail-banners {
+	display: grid;
+	grid-template: auto / 1fr 1fr;
+	gap: 28px 28px;
+	margin: 28px 0 0;
+}
+
+/**
+ * Business
+ */
+
+/* Agency & Owner */
+.business-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&.even { flex-direction: row-reverse; }
+}
+.business-item-txt {
+	width: calc(41.8% - 28px);
+	> h2 {
+		margin: 16px 0 0;
+	}
+}
+.business-item-pic {
+	width: calc(58.2% - 28px);
+}
+
+/**
+ * Lease
+ */
+
+/**
+ * Plan
+ */
+.plan-head {
+	min-height: 342px;
+	display: flex;
+	> .txt {
+		align-items: center;
+		display: flex;
+		padding: 20px 40px;
+		p { max-width: 392px; }
+	}
+	&.even { flex-direction: row-reverse; }
+	> .txt, > picture { width: 50%; }
+}

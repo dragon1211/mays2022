@@ -1,0 +1,44 @@
+/* Coordinate */
+.coordinate-plan {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 48px -10px 0;
+}
+.coordinate-gallery {
+	width: 66.666666%;
+	padding: 0 10px;
+}
+.coordinate-floorplan {
+	width: 33.333333%;
+	padding: 0 10px;
+}
+.coordinate-product-item {
+	display: flex;
+	align-items: center;
+	> picture {
+		width: calc(50% - 26px);
+	}
+	> .txt {
+		width: calc(50% - 26px);
+		margin: 0 0 0 52px;
+	}
+	&.even {
+		flex-direction: row-reverse;
+		> .txt { margin: 0 52px 0 0; }
+	}
+}
+
+/* Brand Story */
+a.topics-index-item-link {
+	max-width: 320px;
+}
+
+ul.concept-service-list {
+	display: flex;
+	justify-content: space-between;
+	> li {
+		width: calc(50% - 14px);
+		margin: 28px 0 0;
+	}
+}

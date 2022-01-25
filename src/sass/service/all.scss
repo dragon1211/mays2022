@@ -1,0 +1,356 @@
+@import "../variables";
+@charset "utf-8";
+
+/* Point */
+.service-points {
+	margin: 60px 0 0;
+}
+.service-point-item {
+	&:nth-child(n+2) { margin-top: 80px; }
+}
+.point-head {
+	color: #AFA593;
+	> .rh {
+		font: 11px/18px $garamond;
+		letter-spacing: .125em;
+		text-align: center;
+		text-transform: uppercase;
+		> span { font-size: 20px; }
+	}
+	> h3 {
+		font: 21px/28px $mincho;
+		letter-spacing: 2px;
+		margin: 20px 0 0;
+	}
+}
+.point-body {}
+
+/*
+ * Index as servive
+ */
+
+/* Introduction */
+section.service-intro {
+	padding: 130px 0 65px;
+	.iframe-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 960px;
+		margin: 45px auto 0;
+		padding: 0 0 56.25%;
+		> iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+/* Points */
+section.service-point {
+	padding: 65px 0 ;
+}
+
+/* Detail */
+.service-detail { padding: 65px 0 40px; }
+
+a.service-detail-banner {
+	background: #ddd url() no-repeat center/cover;
+	color: #fff;
+	display: block;
+	padding: 37px 10px 35px;
+	text-align: center;
+	transition: opacity .3s;
+	> * { display: block; transition: color .3s; }
+	> i {
+		font: normal 28px/34px $garamond;
+		letter-spacing: .15em;
+		text-indent: .15em;
+		text-transform: uppercase;
+	}
+	> strong {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: .1em;
+		text-indent: .1em;
+	}
+	&:hover {
+		opacity: .6;
+		> * { color: rgba(255, 255, 255, .8); }
+	}
+}
+
+/* Pick-up */
+section.service-pickup {
+	padding: 40px 0 140px;
+}
+
+ul.service-pickup-list {
+	margin: 28px 0 0;
+	> li {
+		&:nth-child(n+2) { margin: 20px 0 0; }
+		> a {
+			display: block;
+			> img { width: 100%; }
+		}
+	}
+}
+
+/**
+ * Business
+ */
+
+/* Agency & Owner */
+section.business-agency { padding: 130px 0 65px; }
+section.business-owner { padding: 65px 0 130px; }
+
+.business-item {}
+.business-item-txt {
+	> .rh {
+		color: #898989;
+		font-size: 12px;
+		line-height: 1;
+		> span {
+			position: relative;
+			display: inline-block;
+			padding: 10px 8px;
+			&:before, &:after {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				display: block;
+				content: '';
+			}
+			&:before {
+				border-top: 1px solid #BABCBC;
+				border-left: 1px solid #BABCBC;
+				left: -8px;
+				top: 0;
+			}
+			&:after {
+				border-bottom: 1px solid #BABCBC;
+				border-right: 1px solid #BABCBC;
+				right: -8px;
+				bottom: 0;
+			}
+		}
+	}
+	> h2 {
+		color: #8A8886;
+		font-size: 30px;
+		font-family: $mincho;
+		line-height: 46px;
+		letter-spacing: .1em;
+	}
+	> p { margin: 40px 0 0; }
+}
+.business-item-pic {}
+.business-pic-grid {
+	display: grid;
+	gap: 12px 12px;
+	> div {
+		> img { width: 100%; }
+		&:first-child > img { height: 100%; object-fit: cover; }
+	}
+	&.odd {
+		grid-template: 1fr 1fr/46.7% 51.1%;
+		> div {
+			&:first-child { grid-area: 1 / 1 / 3 / 2; }
+			&:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+			&:last-child { grid-area: 2 / 2 / 3 / 3; }
+		}
+		
+	}
+	&.even {
+		grid-template: 1fr 1fr/51.1% 46.7%;
+		> div {
+			&:first-child { grid-area: 1 / 2 / 3 / 3; }
+			&:nth-child(2) { grid-area: 1 / 1 / 2 / 2; }
+			&:last-child { grid-area: 2 / 1 / 3 / 2; }
+		}
+	}
+}
+
+/* Point */
+section.business-point {
+	padding: 130px 0 140px;
+}
+.business-point-link {
+	margin: 80px 0 0;
+	text-align: center;
+}
+
+/**
+ * Lease
+ */
+
+/* Introduction */
+section.lease-intro { padding: 130px 0; }
+
+/* Point */
+section.lease-point { padding: 130px 0; }
+
+.lease-point-link {
+	margin: 80px 0 0;
+	text-align: center;
+}
+
+/* Plan (inside lease) */
+section.lease-plan { padding: 80px 0; }
+
+a.lease-plan-link {
+	display: block;
+	> img { width: 100%; }
+}
+
+/**
+ * Plan
+ */
+section.plan-sample {
+	padding: 130px 0;
+	h3.sect-title-sub { margin: 80px 0 0; }
+}
+section.plan-package {
+	padding: 0 0 140px;
+	h3.sect-title-sub { margin: 80px 0 0; }
+	ul.notes {
+		max-width: 810px;
+		color: #777;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 48px auto 0;
+		padding-left: 16px;
+		> li {
+			text-indent: -16px;
+			&:nth-child(n+2) { margin-top: 2px; }
+			> span {
+				color: #a1957e;
+				&:after { content: '\00a0'; }
+			}
+		}
+	}
+}
+
+.plan-head {
+	background: #F2F2F3;	
+	> .txt {
+		p { margin: 40px 0 0; }
+	}
+	> picture {
+		> img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&.even { background: #F2F0EA; }
+}
+.plan-head-heading {
+	position: relative;
+	color: #565656;
+	padding: 28px 0 0 64px;
+	> .num {
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 21px;
+		line-height: 1;
+		&:after {
+			position: absolute;
+			left: 42px;
+			top: 10px;
+			width: 1px;
+			height: 32px;
+			background: #707070;
+			content: '';
+			transform: rotate(42deg);
+		}
+	}
+	> h2 {
+		font: 36px/40px $garamond;
+		letter-spacing: .125em;
+		text-transform: uppercase;
+		> strong {
+			position: relative;
+			display: inline-block;
+			font-weight: 400;
+			> small {
+				position: absolute;
+				right: 0;
+				bottom: 100%;
+				color: #898989;
+				display: block;
+				font-family: $gothic;
+				font-size: 12px;
+				line-height: 1;
+				margin: 0 0 6px;
+			}
+		}
+	}
+}
+
+h4.plan-heading-sub {
+	color: #777777;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 2px;
+	&.sans-serif {
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+div.plan-head + h4.plan-heading-sub{ margin-top: 64px; }
+h3.sect-title-sub + h4.plan-heading-sub { margin-top: 30px; }
+picture.plan-furniture + h4.plan-heading-sub { margin-top: 30px; }
+
+picture.plan-furniture {
+	display: block;
+	text-align: center;
+	> img { max-width: 100%; }
+}
+h4.plan-heading-sub + picture.plan-furniture { margin-top: 16px; }
+
+table.plan-pdf-table {
+	width: 100%;
+	border-collapse: collapse;
+	th {
+		border-top: 1px solid #E2E2E2;
+		border-bottom: 1px solid #E2E2E2;
+		color: #8A8886;
+		font: 14px/1 $sans-serif;
+		padding: 11px 16px 7px 0;
+		text-align: left;
+		span.gothic { font-size: 13px; }
+		&:nth-child(n+3) { text-align: center; }
+	}
+	td {
+		border-top: 1px dotted #C0C0C0;
+		padding: 16px 16px 16px 0;
+		vertical-align: middle;
+		&:first-child { color: #777777; font-size: 14px; }
+		&:nth-child(-n+2) { width: 42%; }
+		&:nth-child(n+3) { width: 8%; min-width: 72px; text-align: center; }
+	}
+	> tbody > tr:last-child > td { border-top: 1px solid #E2E2E2; padding-bottom: 0;}
+}
+h3.sect-title-sub + table.plan-pdf-table {margin-top: 40px; }
+h4.plan-heading-sub + table.plan-pdf-table { margin-top: 8px; }
+
+a.plan-dl-link {
+	color: #BABCBC;
+	> svg { width: 24px; height: 24px; }
+	&:hover { color: #444; }
+}
+
+.plan-package-link {
+	margin: 54px 0 0;
+	text-align: center;
+	> a.button { margin: 26px 13px 0; }
+}
+
+/* Media query */
+@media (min-width: 641px) { @import "./pc"; }

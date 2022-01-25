@@ -1,0 +1,17 @@
+{% extends "layout/blog.twig" %}
+
+{% block content %}
+	{% if title %}
+		<h2 class="blog-index-heading">{{ title }}</h2>
+	{% endif %}
+	{% if posts | length %}
+		<div class="blog-index archive">
+			{% for post in posts %}
+				{% include "components/blog/index.twig" %}
+			{% endfor %}
+		</div><!-- .post-index -->
+		{{ pagination }}
+	{% else %}
+		<p>該当する記事は見つかりませんでした。</p>
+	{% endif %}
+{% endblock %}

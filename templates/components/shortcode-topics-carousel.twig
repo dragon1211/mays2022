@@ -1,0 +1,10 @@
+{% if posts | length %}
+	<div class="topics-carousel tag-{{ term }}">
+		{% for post in posts %}
+			<div>{% include "components/topics/index.twig" %}</div>
+		{% endfor %}
+	</div><!-- .topics-carousel -->
+	<script>$('.topics-carousel').slick(SLICK_OPTION)</script>
+{% else %}
+	<p class="nopost">該当する記事はまだありません。</p>
+{% endif %}

@@ -1,0 +1,211 @@
+@charset "utf-8"
+
+._2column
+	max-width 1104px
+	display flex
+	flex-wrap wrap
+	font-size 14px
+	line-height 22px
+	padding 80px 40px
+
+.main-column
+	width calc(100% - 272px)
+
+.sub-column
+	width 252px
+	flex 0 0 auto
+	margin 0 0 0 20px
+
+h2.blog-index-heading
+	font-size 15px
+	line-height 18px
+	& + div.blog-index
+		margin-top 10px
+
+.blog-index
+	display grid
+	grid-template-columns repeat(3, 1fr)
+	grid-gap 20px 20px
+
+a.blog-index-item
+	& + a.blog-index-item
+		margin 0
+	> article
+		> picture
+			overflow hidden
+			> img
+				transition transform .2s
+		> .txt
+			> ul
+				font-size 12px
+				line-height 16px
+				margin 3px 0 0
+				> li
+					margin 6px 4px 0 0
+					padding 2px 6px 3px
+	> span.rank
+		width 36px
+		height 36px
+		font-size 16px
+		line-height 36px
+	&:hover
+		> article
+			> picture
+				> img
+					transform scale(1.1)
+
+/* Hero */
+.blog-heros
+	grid-template-rows repeat(2, 1fr)
+	grid-template-columns repeat(4, 25%)
+	grid-template-areas "main main sub1 sub2" "main main sub3 sub4"
+
+a.blog-hero-item
+	> picture
+			> img
+				transition transform .3s
+	> .ttl
+		font-size 13px
+		line-height 18px
+		padding 5px 10px 4px
+	&:first-child
+		> .ttl
+			font-size 18px
+			line-height 24px
+			padding 20px
+	&:hover
+		> picture
+			> img
+				transform scale(1.1)
+
+/* Pagination */
+.nav-links
+	font-size 12px
+	> .page-numbers
+		min-width 32px
+		margin 6px 2px 0
+	> a.page-numbers
+		transition all .2s
+		&:hover
+			background #ff9000
+			border-color #ff9000
+			color #fff
+
+/* Single */
+article.blog-single
+	> h1
+		font-size 32px
+		line-height 40px
+
+ul.blog-meta
+	> li
+		> i.icon
+			font-size 18px
+.blog-tags
+	padding 0 0 0 24px
+	> i.icon
+		@extend ul.blog-meta > li > i.icon
+		top 15px
+	> ul
+		> li
+			margin 10px 5px 0 0
+			> a
+				font-size 12px !important
+				padding 2px 6px 3px
+				&:hover
+					background #ff9000
+
+/* Body Content */
+.blog-body-content
+	margin 40px 0 0
+	h2
+		font-size 24px
+		line-height 28px
+		margin 50px 0 30px
+	h3
+		font-size 21px
+		line-height 28px
+		margin 30px 0 20px
+	h4, h5, h6, p, ul, ol
+		margin 20px 0 0
+	li
+		margin 2px 0 0
+	> .wp-block-image
+		margin 30px 0 0
+
+/* Footer */
+article.blog-single > footer
+	margin 40px 0 0
+	padding 0 150px 0 0
+
+.sns-btns
+	position absolute
+	right 0
+	top 20px
+	font-size 16px
+	margin 0
+	> a
+		width 30px
+		height 30px
+		padding 7px 0 0
+
+/* Related posts */
+aside.related-posts
+	margin 70px 0 0
+
+/* Back to index */
+.blog-back-to-index
+	margin 70px 0 0
+
+/* Sidebar */
+aside.blog-sidebar
+	> section
+		&:nth-child(n+2)
+			margin 20px 0 0
+		> h2
+			font-size 15px
+			line-height 18px
+
+section.widget
+	> p
+		margin 10px 0 0
+		> a
+			&:after
+				width 7px
+				height 7px
+				border-width 2px
+			&:hover
+				color #ff9000
+
+ol.wpp-list
+	font-size 14px
+	line-height 20px
+	> li
+		padding 10px 0
+		&:before
+			width 20px
+			height 20px
+			left 5px
+			top 15px
+		> a
+			> img
+				width 65px
+ul.wp-tag-cloud
+	> li
+		margin 6px 2px 0
+		> a
+			@extend .blog-tags > ul > li > a
+			&:hover
+				@extend .blog-tags > ul > li > a:hover
+
+/* Tag List */
+ul.blog-tag-list
+	> li
+		margin 6px 2px 0
+		> a
+			@extend .blog-tags > ul > li > a
+			> small
+				font-size 11px
+			&:hover
+				@extend .blog-tags > ul > li > a:hover
+				

@@ -1,0 +1,209 @@
+
+.concept-container {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.concept-sect-title {
+	> strong {
+		font-size: 72px;
+    line-height: 78px;
+    word-wrap: break-word;
+	}
+	> small {
+		font-size: 24px;
+    line-height: 28px;
+    margin: 8px 0 0;
+	}
+}
+
+.sect-title-sub {
+	font-size: 32px;
+	line-height: 40px;
+	padding: 22px 30px 16px;
+	> small {
+		display: block;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+/* Header */
+.concept-hero {
+	height: 440px;
+}
+
+.concept-page-title {
+	height: 440px;
+  padding-top: 167px;
+}
+
+/* Introduction */
+section.concept-intro {
+	padding-top: 173px;
+	padding-bottom: 180px;
+	h2 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	p {
+		font-size: 24px;
+		line-height: 48px;
+		margin: 90px 0 0;
+	}
+}
+
+/* Coordinate */
+section.concept-coordinate {
+	padding: 173px 0 180px;
+	> * > h3 {
+		font-size: 34px;
+		line-height: 50px;
+		margin: 76px 0 0;
+	}
+	> * > p {
+		font-size: 24px;
+		line-height: 48px;
+		margin: 30px 0 0;
+	}
+}
+
+.concept-coordinate-tab {
+	margin: 100px 0 0;
+}
+
+.concept-coordinate-tab-ctrl {
+	> button {
+		font-size: 24px;
+		height: 80px;
+		> small {
+			display: block;
+			font-size: 14px;
+			margin: 4px 0 0;
+		}
+	}
+}
+
+section.coordinate-item {
+	padding: 72px 0 108px;
+	> h4 {
+		font-size: 48px;
+		line-height: 60px;
+	}
+}
+
+.coordinate-plan {
+	margin: 64px 0 0;
+}
+
+.coordinate-floorplan {
+	margin: 20px 0 0;
+	> p {
+		font-size: 24px;
+		line-height: 48px;
+		margin: 30px 0 0;
+	}
+}
+
+.coordinate-product-item {
+	margin: 64px 0 0;
+	> .txt {
+		> h6 {
+			font-size: 36px;
+			line-height: 50px;
+		}
+		> .price {
+			font-size: 24px;
+			&:after {
+				right: 180px;
+			}
+		}
+		> p {
+			font-size: 24px;
+			line-height: 40px;
+		}
+	}
+}
+
+.coordinate-oproduct-list {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 30px 0 0;
+	> li {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/* Brand Story */
+section.concept-brandstory {
+	padding-top: 173px;
+	padding-bottom: 180px;
+	aside { margin: 173px 0 0; }
+}
+
+.concept-brandstory-carousel {
+	margin: 72px -10px;
+	padding: 0 0 80px;
+}
+
+.slick-dots {
+	> li {
+		margin: 0 12px;
+		> button {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+a.topics-index-item-link {
+	> .thumb {
+		> span {
+			width: 176px;
+			font-size: 16px;
+		}
+	}
+	> time.published {
+		font-size: 18px;
+		margin: 36px 0 0;
+	}
+	> h1.title {
+		font-size: 26px;
+		line-height: 32px;
+		margin: 8px 0 14px;
+	}
+	> p.excerpt {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	> .read {
+		font-size: 14px;
+		margin: 60px 0 0;
+	}
+}
+
+p.nopost {
+	font-size: 24px;
+	line-height: 48px;
+	margin: 72px 0;
+}
+
+ul.concept-service-list {
+	> li {
+		margin: 30px 0 0;
+		> a {
+			padding: 50px 20px 46px;
+			> i {
+				font-size: 44px;
+				line-height: 56px;
+			}
+			> strong {
+				font-size: 20px;
+				line-height: 32px;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<div class="blog-tags">
+	<i class="icon">l</i>
+	<ul>
+		{% for tag in post.terms('blog_tag') %}
+			<li><a href="{{ tag.link }}">{{ tag.name }}</a></li>
+		{% endfor %}
+	</ul>
+</div><!-- .tag -->

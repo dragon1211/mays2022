@@ -1,0 +1,109 @@
+@import "../variables";
+@charset "utf-8";
+
+/* Font */
+.txt-body {
+	font-size: 24px;
+	line-height: 48px;
+}
+
+/* Container */
+.container {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+/* Title & heading */
+.sect-title {
+	> strong {
+		font-size: 72px;
+		line-height: 78px;
+		word-wrap: break-word;
+	}
+	> small {
+		font-size: 24px;
+		line-height: 28px;
+		margin: 8px 0 0;
+	}
+}
+
+.sect-title-sub {
+	font-size: 32px;
+	line-height: 40px;
+	padding: 22px 30px 16px;
+	> small {
+		display: block;
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.sect-title-sub2 {
+	font-size: 28px;
+	line-height: 36px;
+	padding: 0 0 4px;
+	> small {
+		font-size: 18px;
+	}
+}
+
+/* Section */
+.introduction {
+	h2 {
+		font-size: 48px;
+		line-height: 72px;
+	}
+	p {
+		margin: 90px auto 0;
+	}
+}
+
+/* Button */
+a.button {
+	width: auto;
+	border-width: 2px;
+	display: block;
+	padding: 32px 20px;
+	> span {
+		&:first-child {
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 44px;
+			letter-spacing: 6px;
+		}
+		&:last-child {
+			font-size: 20px;
+		}
+	}
+	&:after {
+		width: 12px;
+		height: 12px;
+		right: 40px;
+		border-top-width: 3px;
+		border-right-width: 3px;
+		margin: -6px 0 0;
+	}
+}
+
+/* Divider */
+.section-divider {
+	hr { border-width: 3px; }
+}
+
+/* Popup */
+.popup {
+	width: auto;
+	height: 82vh;
+	margin: 9vh 40px;
+	padding-top: 120px;
+}
+.popuptitle {
+	margin-bottom: 115px;
+}
+.popupcloser {
+	top: calc(9vh + 30px);
+	left: auto;
+	right: 70px;
+	width: 28px;
+	height: 28px;
+}
