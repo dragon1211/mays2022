@@ -1,4 +1,6 @@
-<?php get_header('eng'); ?>
+<?php
+	get_header('eng');
+?>
 
 <link rel="stylesheet" href="/css/home.css">
 <link rel="stylesheet" href="/css/sp_home.css" media="(max-width: 640px)">
