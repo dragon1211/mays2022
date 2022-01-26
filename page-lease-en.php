@@ -1,394 +1,355 @@
 <?php
-switchLanguage();
-get_header();
+	switchLanguage();
+	get_header();
 ?>
 <link rel="stylesheet" href="/css/common/2020.css">
 <link rel="stylesheet" href="/css/common/sp_2020.css" media="(max-width: 640px)">
 <link rel="stylesheet" href="/css/service/all.css">
 <link rel="stylesheet" href="/css/service/sp.css" media="(max-width: 640px)">
+
 <div class="page-header" style="background-image: url(/images/service/lease/header.jpg)">
-	<h1><i>Furniture Lease</i></h1>
-</div><!-- .page-header -->
-<section id="introduction" class="introduction lease-intro bg-white">
-	<div class="container">
-      <h2>Coordination at the “next level” through leasing</h2>
-      <p class="txt-body">Furniture leasing and rental services are widespread in Europe, the US, and other countries. We provide one-stop services for the items you need to live a comfortable life, including furniture, curtains, lighting fixtures, and home appliances. Our services include the Coordination Plan, where a professional interior coordinator fully coordinates your furniture and interior goods, and the Package Plan, in which essential furniture is available for short-term use at a reasonable price.</p>
-	</div><!-- .container -->
-</section>
-<section id="point" class="lease-point bg-pattern">
+	<h1>
+		<i>Furniture Lease / Rental</i>
+		<strong>Furniture Lease/Rental Service</strong>
+	</h1>
+</div>
+
+<!-- .page-header -->
+<section id="introduction" class="lease-intro bg-white">
 	<div class="container">
 		<h2 class="sect-title">
-			<strong>Why Leasing</strong>
-          <small>Three advantages of leasing</small>
+			A wide choice of products<br class="pc_on"> Furniture Lease/<br class="sp_on">Rental Service
 		</h2>
-		<div class="service-points">
-			<!-- 01 -->
-			<div class="service-point-item">
-				<div class="point-head">
-					<div class="rh">Point<br><span>01</span></div>
-                  <h3 class="antialiased">Lease terms that meet<br>diverse needs</h3>
-				</div><!-- .point-head -->
-				<div class="point-body">
-					<div class="pic-txt">
-						<picture>
-							<img src="/images/service/lease/point-1.jpg" srcset="/images/service/lease/point-1@2x.jpg 656w" sizes="328px" width="328" alt="経費で落とせる">
-						</picture>
-                      <p class="txt-body">We have a wide range of lease plans from 1 month to 36 months to meet the diverse needs of our customers, including those who are transporting furniture from their home country and only wish to use our leasing service for a few months, as well as those looking to use our service during a longer stay in Japan.</p>
-					</div><!-- .pic-txt -->
-				</div><!-- .point-body -->
-			</div><!-- .service-point-item -->
-			<!-- 02 -->
-			<div class="service-point-item">
-				<div class="point-head">
-					<div class="rh">Point<br><span>02</span></div>
-                  <h3 class="antialiased">Lower initial costs</h3>
-				</div><!-- .point-head -->
-				<div class="point-body">
-					<div class="pic-txt">
-						<picture>
-							<img src="/images/service/lease/point-2.jpg" srcset="/images/service/lease/point-2@2x.jpg 656w" sizes="328px" width="328" alt="お買い得品多数">
-						</picture>
-                      <p class="txt-body">You can use products from high-end manufacturers at a lower initial cost compared to purchasing them. Also, by using a combination of reasonably priced second-hand products, you benefit from a furniture plan that better suits your budget.</p>
-					</div><!-- .pic-txt -->
-				</div><!-- .point-body -->
-			</div><!-- .service-point-item -->
-			<!-- 03 -->
-			<div class="service-point-item">
-				<div class="point-head">
-					<div class="rh">Point<br><span>03</span></div>
-                  <h3 class="antialiased">Support during the lease term</h3>
-				</div><!-- .point-head -->
-				<div class="point-body">
-					<div class="pic-txt">
-						<picture>
-							<img src="/images/service/lease/point-3.jpg" srcset="/images/service/lease/point-3@2x.jpg 656w" sizes="328px" width="328" alt="まとめて配送">
-						</picture>
-                      <p class="txt-body">During your lease term, we provide a full range of support unique to “renting furniture.” As part of our leasing service, we will exchange or replace items that suffer any defect or failure within the first four years of your leasing contract, except for when you are liable for such failures. </p>
-					</div><!-- .pic-txt -->
-				</div><!-- .point-body -->
-			</div><!-- .service-point-item -->
-		</div><!-- .service-points -->
-      <?php
-      /*
-		<div class="lease-point-link">
-			<a href="#contract" class="button popupbutton bg-white"><span>Contract Guide</span><span></span></a>
+		<div class="lease-intro-box">
+			<div class="lease-intro-box_l">
+				<h3>Coordination Plan</h3>
+				<h4>Features</h4>
+				<ul>
+					<li>Consult directly with a dedicated interior coordinator</li>
+					<li>Plans made within budget by choosing products from multiple brands </li>
+					<li>Proposals for a combination of brand-new furniture and end-of-lease products</li>
+				</ul>
+				<h4>Suitability</h4>
+				<ul>
+					<li>For those who move frequently but don’t want to buy furniture each time</li>
+					<li>For those who wish to live with a fashionable interior</li>
+					<li>For a second house or holiday home</li>
+				</ul>
+				<div class="lease-intro-button01">
+					<a href="">
+						<span>Payment simulation</span>
+					</a>
+				</div>
+			</div>
+			<div class="lease-intro-box_r">
+				<h3>Package Plan</h3>
+				<h4>Features</h4>
+				<p>
+					This includes a set of furniture and household appliances, 
+					selected mainly from end-of-lease products to meet the needs of customers interested in short-term use (less than a year).
+				</p>
+				<h4>Suitability</h4>
+				<ul>
+					<li>For those interested in a short-term use for less than a year</li>
+				</ul>
+				<div class="lease-intro-button02">
+					<a href="/service/package/">
+						<span>Details on the Package Plan</span>
+					</a>
+				</div>
+			</div>
 		</div>
-        */
-      ?>
 	</div><!-- .container -->
 </section>
-<?php
-/*
-<section id="topics" class="service-topics has-paddingt bg-white">
+
+<section id="system" class="lease-system bg-white">
 	<div class="container">
 		<h2 class="sect-title">
-			<strong>Topics - Lease</strong>
+			How Mays’ furniture lease<br class="sp_on"> works
 		</h2>
-		<?php echo do_shortcode('[topics_carousel terms="lease"]'); ?>
-	</div><!--.container  -->
-</section>
-<section id="plan" class="lease-plan bg-white">
-	<div class="container">
-		<a href="/service/plan/" class="lease-plan-link">
-			<img src="/images/service/lease/plan.jpg" alt="サンプル/パッケージプラン">
-		</a>
-	</div><!-- .container -->
-</section>
-<!-- Contact -->
-<link rel="stylesheet" href="/css/lease.css">
-<link rel="stylesheet" href="/css/sp_lease.css" media="(max-width: 640px)">
-<section id="contract" class="popupwrap lease-contract">
-	<div class="popup">
-		<h3 class="popuptitle">
-			<div><img src="/images/leasep2.svg" width="214" height="13" alt="CONTRACT GUIDE"></div>
-			<div>ご契約に際して</div>
-		</h3>
-		<div id="leasep212">
-			<div class="leasep212c">
-				<h3 class="leasep212cttl"><img src="/images/leasep3_1.svg" width="150" height="12" alt="PREPARATION">ご用意いただくもの</h3>
-				<div class="leasep212ccol2cont">
-					<div class="leasep212ccol2">
-						<h4 class="leasep212csttl">法人契約の場合</h4>
-						<div class="leasep212csdesc">
-							<p>当社所定の会社概況に必要事項をご記入いただきます。<br>
-								契約締結時に連帯保証人が必要となる場合がございます。</p>
-						</div>
-					</div>
-					<div class="leasep212ccol2">
-						<h4 class="leasep212csttl">個人契約の場合</h4>
-						<div class="leasep212csdesc">
-							<p>当社所定の個人リース申込書に必要事項をご記入いただきます。<br>
-								契約締結時に契約者ご本人の実印と印鑑証明書、および連帯保証人の実印と印鑑証明書が必要となります。<br>
-								連帯保証人は、有職者で当社の指定する範囲内にお住まいの方に限られます。</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="leasep212c">
-				<h3 class="leasep212cttl"><img src="/images/leasep3_2.svg" width="188" height="12" alt="LEASE PRODUCTS">リース商品</h3>
-				<div class="leasep212ccol2cont">
-					<div class="leasep212ccol2">
-						<h4 class="leasep212csttl">リース対象</h4>
-						<div class="leasep212csdesc">
-							<p>リースの対象となる商品は原則として、下記の通りです。</p>
-							<ol>
-							<li>一般家庭用家具</li>
-							<li>ガーデンファニチャー</li>
-							<li>カーテン</li>
-							<li>一般家庭用照明</li>
-							<li>家電</li>
-							<li>寝装寝具類</li>
-							<li>台所用品</li>
-							<li>額絵</li>
-							<li>生グリーン</li>
-							<li>インテリア小物</li>
-							</ol>
-							<p class="leasep212csdescnote">「6・7」については当社オリジナル商品となります。</p>
-							<p class="leasep212csdescnote">「9・10」については後述のモデルリースのみとなります。</p>
-						</div>
-					</div>
-					<div class="leasep212ccol2">
-						<h4 class="leasep212csttl">リース対象外</h4>
-						<div class="leasep212csdesc">
-							<p>リース対象外の商品は下記の通りです。</p>
-							<ol>
-							<li>左記に属さない商品</li>
-							<li>当社にてリース不適当と判断する商品</li>
-							</ol>
-							<p>連帯保証人は、有職者で当社の指定する範囲内にお住まいの方に限られます。</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="leasep212c">
-				<h3 class="leasep212cttl"><img src="/images/leasep3_3.svg" width="101" height="12" alt="ADVANCE">契約時申受金</h3>
-				<p>一般リース、モデルリースともに、お客様に契約時申受金をお支払いいただいた上でリース商品手配になります。契約時申受金は下記の項目で構成されます。</p>
-				<div class="leasep212ccont">
-					<h4>1. 搬出入手数料</h4>
-					<div class="leasep212ctblwrap">
-						<table id="leasep2121" class="leasep212ctbl">
-						<tbody>
-						<tr>
-						<th>設置場所地域</th>
-						<th>一般リース</th>
-						<th>モデルリース</th>
-						</tr>
-						<tr>
-						<td>東京23区内</td>
-						<td>￥40,000</td>
-						<td>￥70,000</td>
-						</tr>
-						<tr>
-						<td>上記区域外関東地区</td>
-						<td colspan="2">別途お見積</td>
-						</tr>
-						<tr>
-						<td>移設業務（モデルリースのみ）</td>
-						<td colspan="2">￥50,000～</td>
-						</tr>
-						</tbody>
-						</table>
-					</div>
-					<p class="leasep212csdescnote">搬出入手教科とは初回搬入、契約終了時搬出各1回分の手数料となります。また、以下の場合には別途追加料金が必要となります。また、メーカー直送、設置場所立地条件によっても追加料金が発生することもありますので、ご了承ください。</p>
-					<ul>
-					<li>搬出入回数が複数回に及ぶ場合</li>
-					<li>物量が多い場合</li>
-					<li>メーカー配送料が発生する場合</li>
-					<li>設置場所の立地条件及び諸条件（階段作業、吊り上げ・下げ作業など）による場合</li>
-					</ul>
-					<p class="leasep212csdescnote">搬出入日を変更する場合は、搬出入日の3営業日前（土日・祝日除く）までにご連絡ください。それ以降のご変更や、お客様のご都合により指定された搬出入日に実際の作業が出来なかった場合は、トラック再手配料として別途費用を申し受けます。</p>
-					<p class="leasep212csdescnote">契約の途中での一部商品の引上げ・入れ替え・移設等の場合には別途配送費用を申し受けます。</p>
-					<p class="leasep212csdescnote">契約終了後の販売をご希望された場合、搬出費のご返金はいたしません。</p>
-					<p class="leasep212csdescnote">神奈川一部地域及び関東地区とは当社が規定する範囲です。</p>
-				</div>
-				<div class="leasep212ccont">
-					<h4>2. 取付取外工事費</h4>
-					<p>シーリングライト、エアコン等の取付、取外や、家具組立等にかかる費用は、お客様にご負担いただきます。見積内容によって変わりますので、詳しくはお尋ねください。</p>
-				</div>
-				<div class="leasep212ccont">
-					<div class="leasep212ccol2">
-						<h4>3. その他費用</h4>
-						<p>上記 <strong>1. 2.</strong> に該当しないもので、本契約履行のために発生する費用は、お客様にご負担いただきます。モデルリース等で、当社コーディネーターがフルコーディネート（家具・照明・カーテン・グリーン・インテリア小物等）を行った場合は、右記コーディネートフィーを別途いただきます。なお、インテリア小物のみのコーディネートは行っておりません。</p>
-					</div>
-					<div class="leasep212ccol2">
-						<table id="leasep2122" class="leasep212ctbl">
-						<tbody>
-						<tr>
-						<th>コーディネート種別</th>
-						<th>コーディネートフィー<br class="pc">（税抜き）</th>
-						</tr>
-						<tr>
-						<td>1ルーム・1LDK</td>
-						<td>￥50,000</td>
-						</tr>
-						<tr>
-						<td>2LDK</td>
-						<td>￥100,000</td>
-						</tr>
-						<tr>
-						<td>3LDK</td>
-						<td>￥150,000</td>
-						</tr>
-						<tr>
-						<td>4LDK</td>
-						<td>￥200,000</td>
-						</tr>
-						<tr>
-						<td>戸建・その他間取り</td>
-						<td>別途お見積</td>
-						</tr>
-						</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="leasep212ccont">
-					<h4>4. 保証金</h4>
-					<p>リース契約期間に応じて、下記のとおりの保証金を申し受けます。なお、契約内容等によっては保証金の金額が変わる場合もあります。保証金は契約満了後、当社へのリース商品の返却完了と債務の完済を確認した後にお返しいたします。</p>
-					<div class="leasep212ccol2">
-						<table id="leasep2123" class="leasep212ctbl">
-						<caption>一般リース</caption>
-						<tbody>
-						<tr>
-						<th>契約期間<br class="sp">（月数）</th>
-						<th>保証金</th>
-						</tr>
-						<tr>
-						<td>1～12</td>
-						<td>月額リース料の2ヶ月分</td>
-						</tr>
-						<tr>
-						<td>18～24</td>
-						<td>月額リース料の3ヶ月分</td>
-						</tr>
-						<tr>
-						<td>30～36</td>
-						<td>月額リース料の5ヶ月分</td>
-						</tr>
-						</tbody>
-						</table>
-					</div>
-					<div class="leasep212ccol2">
-						<table id="leasep2124" class="leasep212ctbl">
-						<caption>モデルリース</caption>
-						<tbody>
-						<tr>
-						<th>契約期間<br class="sp">（月数）</th>
-						<th>保証金</th>
-						</tr>
-						<tr>
-						<td>1</td>
-						<td>不要</td>
-						</tr>
-						<tr>
-						<td>3～6</td>
-						<td>月額リース料の1ヶ月分</td>
-						</tr>
-						<tr>
-						<td>12</td>
-						<td>月額リース料の2ヶ月分</td>
-						</tr>
-						<tr>
-						<td>18～36</td>
-						<td>月額リース料の3ヶ月分</td>
-						</tr>
-						</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="leasep212ccont">
-					<h4>5. 初回リース料</h4>
-					<p>初回リ一ス料として、月額リ－ス料のおよそ3ヶ月分を申し受けます。詳しくはお尋ね下さい。</p>
-				</div>
-			</div>
-			<div class="leasep212c" id="leasep2125">
-				<h3 class="leasep212cttl"><img src="/images/leasep3_4.svg" width="255" height="12" alt="CONTRACT EXPIRATION">契約満了時</h3>
-				<p>契約満了時には、更新／契約終了／お買取をお客様のご希望によってお選びいただけます。</p>
-				<div class="leasep212ccont">
-					<h4>1. 更新</h4>
-					<ul>
-					<li>更新後のリース料率は、電話権利及び生グリーンを除き、上記「リース料率表」どおりに割引させていただきます。</li>
-					<li>更新は1ヶ月単位で行うことができます。なお、更新後の解約は、長期リースの場合は希望日の1ヶ月前、短期リースの場合は2週間前までにお申出ください。</li>
-					<li>当社より送付される期間満了通知確認書にて、期限までにご通知がない場合、自動的に契約が更新されます。</li>
-					</ul>
-				</div>
-				<div class="leasep212ccont">
-					<h4>2. 契約終了</h4>
-					<ul>
-					<li>満了日または解約日に当社が商品をお引取します。上記「契約時申受金」の1.の注意書きをお読みください。</li>
-					</ul>
-				</div>
-				<div class="leasep212ccont">
-					<h4>3. お買取</h4>
-					<ul>
-					<li>リース契約終了後、リース商品を特別価格でお買上げいただくことができます。販売料率は、上記「リース料率表」をご参照ください。</li>
-					<li>販売価格の該当契約期間（月数）は、解約精算時の契約期間（月数）となります。</li>
-					</ul>
-				</div>
-			</div>
-			<div class="leasep212c">
-				<h3 class="leasep212cttl"><span class="imgswap"><img src="/images/leasep3_5.svg" width="378" height="12" alt="CANCELLATION BEFORE MATURITY"><img src="/images/sp_leasep3_5.svg" width="403" height="66" alt="CANCELLATION BEFORE MATURITY"></span>中途解約</h3>
-				<p>更新契約を除き、原則的に中途解約はできませんが、残存期間のリース料全額を違約金として支払うことにより、解約が認められます。なお、更新契約の解約につきましては、違約金はかかりません。</p>
-			</div>
-			<div class="leasep212c" id="leasep2126">
-				<h3 class="leasep212cttl"><span class="imgswap"><img src="/images/leasep3_6.svg" width="260" height="15" alt="CORRUPTION / DAMEGE"><img src="/images/sp_leasep3_6.svg" width="280" height="70" alt="CORRUPTION / DAMEGE"></span>破損・ダメージなどに関して</h3>
-				<div class="leasep212ccont">
-					<h4>1. 故障してしまった</h4>
-					<p>故障があったら、すぐにご連絡ください。<br>
-						契約開始よリ4年が経過するまでは、当社にて修理の手配、または代替品をご用意致します。ただしお客様の過失による故障の場合は、別途費用をご請求いたします。</p>
-				</div>
-				<div class="leasep212ccont">
-					<h4>2. リース物件を傷つけてしまった</h4>
-					<p>リース中の多少の傷や自然の磨耗は日常使用によるものとして免責されます。<br>
-						ただし、次の場合はダメージの対象となり、故意・過失を問わず、お客様の責任となります。</p>
-					<ul>
-					<li>椅子を壊したり、ソファの生地を破いてしまった</li>
-					<li>タバコで商品に焦げ痕をつくってしまった</li>
-					<li>らくがき、薬品、飲食物などでシミや汚れを作ってしまった</li>
-					</ul>
-					<p>これに相当するダメージは、お客様の責任となリダメージ料の請求対象となりますので、ご注意ください。</p>
-				</div>
-				<div class="leasep212ccont">
-					<h4>3. 天災の場合</h4>
-					<p>天災によリリース物件がその機能を果たさなくなった場合、お客様に損害の請求はありませんが、当社も代替等の商品供給は行いません。<br>
-						当該商品のリースは終了となります。</p>
-				</div>
-			</div>
+		<div class="lease-system-img">
+			<picture>
+			<source media="(max-width: 768px)" srcset="/images/service/lease/lease_system_s.jpg">
+			<img src="/images/service/lease/lease_system.jpg" alt="">
+			</picture>
 		</div>
 	</div>
-	<div class="popupcloser"></div>
 </section>
-*/
-?>
-<script src="/wp-content/themes/mays2020/assets/bodyScrollLock.min.js"></script>
-<script>
-(function($) {
-	/**
-	 * Popup
-	 */
-	function showPopup(e) {
-		e.preventDefault();
-		e.stopPropagation();
 
-		var id = e.currentTarget.getAttribute('href'),
-				popupSection = document.querySelector(id);
-		
-		document.documentElement.style.overflow = 'hidden';
-		bodyScrollLock.disableBodyScroll(popupSection);
-		$(popupSection).show();
-		
-	}
-	function hidePopup(e) {
-		e.preventDefault();
-		e.stopPropagation();
+<section id="merit" class="lease-merit bg-white">
+	<div class="container">
+		<h2 class="sect-title">Benefits</h2>
+		<div class="lease-merits">
+			<!-- 01 -->
+			<div class="lease-merit-item">
+				<div class="merit-item_l">
+					<picture>
+						<source media="(max-width: 768px)" srcset="/images/service/lease/lease_pic001.png">
+						<img src="/images/service/lease/lease_pic001.png" alt="">
+					</picture>
+					<p>
+						<small>Various durations to choose from<br>Book a collection for an easy return</small>
+					</p>
+				</div>
+				<div class="merit-item_r">
+					<p class="txt-body">
+						Our lease/rental plan is available for various durations to meet the needs of customers: 1, 3, 6, 12, 18, 24, and 36 months.<br>
+						You can return the items easily after the period of use. Simply inform us of the desired date and time of return. <br>
+						Once your booking has been confirmed, just wait for collection staff to turn up. No big charges for moving means it is advantageous to those who move frequently.
+					</p>
+				</div>
+			</div>
+			<!-- 02 -->
+			<div class="lease-merit-item">
+				<div class="merit-item_l">
+					<picture>
+						<source media="(max-width: 768px)" srcset="/images/service/lease/lease_pic002.png">
+						<img src="/images/service/lease/lease_pic002.png" alt="">
+					</picture>
+					<p>
+						<small>Initial cost up to one quarter</small>
+					</p>
+				</div>
+				<div class="merit-item_r picinbox">
+					<p class="txt-body">
+						The initial cost for a lease/rental contract can be a quarter of the purchase cost. 
+						For example, as opposed to purchasing a range of furniture worth ¥1,000,000, the total initial cost for a lease/rental would be somewhere around ¥200,000, 
+						including coordination and delivery fees, deposit, and an initial lease charge. 
+						This means that the expenses incurred at the start of furniture lease could be about one fifth of the purchase price.
+					</p>
+					<div class="merit-item_r-img">
+						<picture>
+							<source media="(max-width: 768px)" srcset="/images/service/lease/lease_price.png">
+							<img src="/images/service/lease/lease_price.png" alt="">
+						</picture>
+						<P>
+							<small>※The amount may increase depending on the lease period, the amount of compensation, and other factors.</small>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- 03 -->
+			<div class="lease-merit-item">
+				<div class="merit-item_l">
+					<picture>
+						<source media="(max-width: 768px)" srcset="/images/service/lease/lease_pic003.png">
+						<img src="/images/service/lease/lease_pic003.png" alt="">
+					</picture>
+					<p>
+						<small>Options of buying or renewing after contracts expire</small>
+					</p>
+				</div>
+				<div class="merit-item_r">
+					<p class="txt-body">
+						After the expiration of the contract, you can choose to:<br>
+						1. Return the items;<br>
+						2. Buy the items; or<br>
+						3. Renew the contract for a further period.<br>
+						(Around two months before the contract expires, we will ask what you would like to do after the contract expires)<br>
+						Your monthly payment will be almost halved if you wish to renew your contract and continue to use the items. 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- .container -->
+</section>
 
-		var popupSection = e.currentTarget.parentElement;
-		
-		document.documentElement.style.overflow = '';
-		bodyScrollLock.enableBodyScroll(popupSection);
-		$(popupSection).hide();
-	}
-	$('.popupbutton').click(showPopup);
-	$('.popupcloser').click(hidePopup);
-})(jQuery);
-</script>
+<section id="flow" class="lease-flow bg-white">
+	<div class="container">
+		<h2 class="sect-title">Service flow</h2>
+		<div class="service-flow-flex">
+        	<div class="service-flow-box">
+            	<div class="service-flow-wrap">
+            		<div class="service-flow-meta">
+						<p class="service-flow-count"><span>1</span></p>
+						<h3 class="service-flow-heading">Meeting</h3>
+						<!-- <h4 class="service-flow-subheading">Meeting</h4> -->
+						<p class="service-flow-read">Tell a dedicated coordinator your request.</p>
+              		</div>
+             		<div class="service-flow-img">
+              			<img src="/images/service/index/img_flow_01.jpg" alt="">
+              		</div>
+            	</div>
+        	</div>
+        	<div class="service-flow-box">
+            	<div class="service-flow-wrap">
+            		<div class="service-flow-meta">
+						<p class="service-flow-count"><span>2</span></p>
+						<h3 class="service-flow-heading">Proposal</h3>
+						<!-- <h4 class="service-flow-subheading">Proposal</h4> -->
+						<p class="service-flow-read">You’ll receive an interior plan and quotation based on your request.</p>
+              		</div>
+              		<div class="service-flow-img">
+              			<img src="/images/service/index/img_flow_02.jpg" alt="">
+              		</div>
+            	</div>
+        	</div>
+        	<div class="service-flow-box">
+            	<div class="service-flow-wrap">
+            		<div class="service-flow-meta">
+              		<p class="service-flow-count"><span>3</span></p>
+              		<h3 class="service-flow-heading">Contract</h3>
+              		<!-- <h4 class="service-flow-subheading">Contract</h4> -->
+              		<p class="service-flow-read">We’ll arrange your chosen products.</p>
+              		</div>
+              		<div class="service-flow-img">
+              		<img src="/images/service/index/img_flow_03.jpg" alt="">
+              		</div>
+            	</div>
+        	</div>
+        	<div class="service-flow-box">
+            	<div class="service-flow-wrap">
+            		<div class="service-flow-meta">
+						<p class="service-flow-count"><span>4</span></p>
+						<h3 class="service-flow-heading">Delivery</h3>
+						<!-- <h4 class="service-flow-subheading">Delivery</h4> -->
+						<p class="service-flow-read">Choose your desired date and time. We’ll take care of deliveries and installations.</p>
+              		</div>
+              		<div class="service-flow-img">
+              			<img src="/images/service/index/img_flow_04.jpg" alt="">
+              		</div>
+            	</div>
+        	</div>
+        </div>
+	</div><!--.container  -->
+</section>
+<section id="voice" class="lease-voice bg-white">
+	<div class="container">
+		<h2 class="sect-title">Customer reviews</h2>
+		<div class="lease-voice-box">
+			<ul class="lease-voice-slider">
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+					<img src="/images/service/lease/voice_img01.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+					<h3>Mr. A, company executive<span>(second house in Chiyoda Ward)</span></h3>
+					<p>I found it a convenient service. I rent an apartment as my second house near my workplace and use Mays every few years when moving. It’s so easy to move as I only need to return the leased items.</p>
+					</div>
+				</li>
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+					<img src="/images/service/lease/voice_img02.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+					<h3>Mr. K, sole trader <span>(main residence in Setagaya Ward)</span></h3>
+					<p>I was lucky to buy the Cassina dining table and chairs at a very reasonable price. Although they were end-of-lease products, they were maintained very well and were comparable to brand-new products.</p>
+					</div>
+				</li>
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+					<img src="/images/service/lease/voice_img03.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+					<h3>Mr. H, company owner <span>(holiday home in Kanagawa Prefecture)</span></h3>
+					<p>I’m satisfied with my shopping, which was processed quickly. Thank you so much. I was very pleased with the careful checking and attentiveness at the time of delivery as well as the planning.</p>
+					</div>
+				</li>
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+						<img src="/images/service/lease/voice_img04.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+						<h3>Mr. H, foreign-affiliated company executive <span>(Minato Ward)</span></h3>
+						<p>Being stationed in Japan for the first time, I wondered if I could make the right decision about the house and furniture. <br>
+							I was based overseas so communicated with Mays by email, and the coordinator discussed my budget and requests with me.<br>
+							I was very anxious until I actually saw the furniture, but the room was exactly how I imagined. <br>
+							This allowed me to start a comfortable life in Japan from the first day of my arrival!
+						</p>
+					</div>
+				</li>
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+						<img src="/images/service/lease/voice_img05.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+						<h3>Mr. & Mrs. K, second house owners</h3>
+						<p>
+							We bought a second house and had an image in our minds of furniture, <br>
+							lighting, curtains, etc. that would match the rooms. <br>
+							However, we were unsure about how to find and arrange the items. <br>
+							We then found Mays and had their coordinator work on a full coordination. <br>
+							I found them very professional as the coordinator produced what we visualized and was able to implement our ideal lifestyle. <br>
+							We now spend more time in the second house in Tokyo, often inviting friends and holding parties. <br>
+							Next time, we'd like to ask Mays to coordinate the furniture for our main residence.<br>
+						</p>
+					</div>
+				</li>
+				<li class="lease-voice-slider-box">
+					<div class="lease-voice-slider-img">
+						<img src="/images/service/lease/voice_img06.jpg" alt="">
+					</div>
+					<div class="lease-voice-slider-txt">
+						<h3>Mr. & Mrs. S in their 30s</h3>
+						<p>
+							We consulted with Mays on the occasion of our move as we decided to replace all of our furniture, which was quite worn. <br>
+							My wife and I were demanding and particular about what we wanted, but the coordinator listened to us patiently and proposed items of furniture based on our requests at the same time as taking safety into consideration for our children.<br>
+							Our new life has been enriched through the coordination service that satisfied the needs of our family without making unreasonable suggestions.
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section id="faq" class="lease-faq bg-white">
+    <div class="container">
+    	<h2 class="sect-title">FAQs</h2>
+        <div class="lease-faq-box">
+			<h3>Mays’ furniture lease/rental service</h3>
+			<p class="lease-faq-question">
+				Q. How is it different from other furniture rental services?
+			</p>
+			<p class="lease-faq-answer">
+				Our service differs from others in that we can propose a combination of brand-new furniture and end-of-lease products. <br>
+				When purchasing high-end furniture, you can often choose upholstery from various types of leather or fabric and decide detailed specifications. <br>
+				The brand-new furniture that meets your specific requirements can be combined with affordable, well-maintained end-of-lease products.
+			</p>
+			<div class="lease-faq-banner">
+				<a href="#">How Mays’ lease/rental works</a>
+			</div>
+		</div>
+        <div class="lease-faq-box">
+			<h3>Trouble during use</h3>
+			<p class="lease-faq-question">
+				Q. What happens if I stain an item?
+			</p>
+			<p class="lease-faq-answer">
+				You will not be held responsible for small scratches and stains from normal use.<br>
+				However, you will be charged for stains caused by your negligence, such as cigarette burns and wine stains, as well as any damages that cannot be repaired by cleaning performed as part of maintenance. 
+			</p>
+		</div>
+		<div class="lease-faq-box">
+			<h3>Midterm cancellation</h3>
+			<p class="lease-faq-question">
+				Q. If I cancel my contract in the middle of the term, do I need to pay the remaining value of the contract?
+			</p>
+			<p class="lease-faq-answer">
+				In principle, a midterm cancellation cannot be made within the lease period set at the time of the initial contract. <br>
+				There is a penalty in the case of cancellation. <br>
+				However, if the contract has been renewed at least once, it can be cancelled by making a payment for the month in which you last use the service.
+			</p>
+			<div class="lease-faq-banner">
+        		<a href="/faq/">Other FAQs</a>
+			</div>
+		</div>
+    </div><!-- .container -->
+</section>
+
+
+<section id="bottombox" class="lease-btmbox bg-white">
+	<div class="container">
+		<div class="lease-btmbox-inner">
+			<a href="#" class="lease-btmbox-banner">Payment simulation</a>
+			<a href="/contact/" class="lease-bt,box-banner">Make a coordination request</a>
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact -->
+<link rel="stylesheet" href="/css/lease.css" media="(min-width: 641px)">
+<link rel="stylesheet" href="/css/sp_lease.css" media="(max-width: 640px)">
+<script src="/js/lease.js"></script>
 <?php get_footer(); ?>

@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+.bg {transition-property:all;transition:0.3s linear;}
+.text {transition-property:all;transition:0.3s linear;}
+.pc_on {
+    display: block;
+}
+.sp_on {
+    display: none;
+}
+
+.lease-intro {
+
+}
+.sect-title {
+    color: #8A8886;
+    font-size: 30px;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.lease-intro-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.lease-intro-box h3 {
+    font-size: 26px;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.lease-intro-box h4 {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: .3rem 0;
+}
+.lease-intro-box ul {
+    margin: 20px 20px 40px;
+}
+.lease-intro-box ul li {
+    font-size: 16px;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+}
+.lease-intro-box ul li::before {
+    content: "●";
+}
+.lease-intro-box_l {
+    width: 64%;
+    padding: 30px;
+    color: #333;
+    background-color: #D1C2A9;
+}
+.lease-intro-box_l h4 {
+    color: #D1C2A9;
+    background-color: #333;
+    border-radius: 20px;
+}
+.lease-intro-box_r {
+    width: 34%;
+    padding: 30px;
+    color: #D1C2A9;
+    background-color: #333333;
+}
+.lease-intro-box_r h4 {
+    color: #333;
+    background-color: #D1C2A9;
+    border-radius: 20px;
+}
+.lease-intro-box_r p {
+    font-size: 16px;
+    line-height: 2.5rem;
+    margin: 20px 20px 46px;
+}
+.lease-intro-box_r ul {
+    margin-bottom: 90px;
+}
+.lease-intro-button01,
+.lease-intro-button02 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.lease-intro-button01 a,
+.lease-intro-button02 a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    opacity: .5;
+    transition: all .3s;
+}
+.lease-intro-button01 a {
+    color: #333;
+    border: 1px #333 solid;
+    visibility: hidden;
+}
+.lease-intro-button02 a {
+    color: #D1C2A9;
+    border: 1px #D1C2A9 solid;
+}
+.lease-intro-button01 a:hover,
+.lease-intro-button02 a:hover {
+    opacity: 1;
+}
+.lease-system,
+.lease-merit,
+.lease-flow,
+.lease-voice {
+    margin-bottom: 130px;
+}
+.lease-system-img {
+    width: 100%;
+    height: 440px;
+    background-color: #efefef;
+}
+.lease-merits .lease-merit-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.lease-merits .lease-merit-item .merit-item_l {
+    width: 200px;
+    margin-right: 85px;
+}
+.lease-merits .lease-merit-item .merit-item_l picture {
+    width: 200px;
+    height: 200px;
+    /*background-color: #efefef;*/
+}
+.lease-merits .lease-merit-item .merit-item_l picture img {
+    width: 200px;
+}
+.lease-merits .lease-merit-item .merit-item_l p {
+    margin-top: .5rem;
+    text-align: center;
+    line-height: 1.6rem;
+}
+.lease-merits .lease-merit-item .merit-item_l p small {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+.lease-merits .lease-merit-item .merit-item_r.picinbox {
+    display: flex;
+    justify-content: space-between;
+}
+.lease-merits .lease-merit-item .merit-item_r.picinbox .merit-item_r-img {
+    margin-left: 70px;
+}
+.lease-merits .lease-merit-item .merit-item_r.picinbox .merit-item_r-img p {
+margin-top: .5rem;
+text-align: left;
+line-height: 1.4rem;
+}
+.lease-merits .lease-merit-item .merit-item_r.picinbox .merit-item_r-img p small {
+    font-size: 1.35rem;
+}
+.lease-voice-slider li.lease-voice-slider-box {
+    height: 200px;
+    margin: 0 10px;
+    border: 1px #D1C2A9 solid;
+    display: flex;
+}
+.lease-voice-slider-img img {
+    width: 170px;
+    height: 200px;
+    margin-right: 50px;
+    background-color: #efefef;
+}
+.lease-voice-slider-txt h3 {
+    font-size: 16px;
+    margin: 1.8rem 1.5rem 1.8rem 0;
+    display: inline-block;
+}
+.lease-voice-slider-txt h3 span {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: .4rem;
+    margin-left: .8rem;
+}
+.lease-voice-slider-txt p {
+    padding-right: 30px;;
+    font-size: 14px;
+    line-height: 2rem;
+    font-feature-settings: "palt";
+}
+.slick-dots {
+    bottom: -35px;
+}
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;
+    height:8px;
+    display:block;
+    border-radius:50%;
+    background:#f2f2f2;/*ドットボタンの色*/
+}
+.slick-dots li button::before {
+    display: none;
+}
+.slick-dots .slick-active button{
+    background:#afa593;
+}
+.lease-faq-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.lease-faq-box h3 {
+    font-size: 24px;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    color: #D1C2A9;
+    margin-bottom: 20px;
+    padding: 0 0 .5rem 1rem;
+    border-bottom: 1px #D1C2A9 solid;
+}
+.lease-faq-box .lease-faq-question {
+    margin: 0 30px 20px;
+    font-size: 16px;
+}
+.lease-faq-box .lease-faq-answer {
+    margin: 0 30px 0 50px;
+    font-size: 16px;
+    line-height: 2.6rem;
+}
+.lease-faq-box .lease-faq-banner {
+    width: 100%;
+    margin: 40px auto 50px;
+    text-align: center;
+}
+.lease-faq-box .lease-faq-banner a {
+    width: 440px;
+    height: 50px;
+    padding: 1.2rem 3rem;
+    border: 1px solid #d1c2a9;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    color: #d1c2a9;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.lease-faq-box .lease-faq-banner a:hover {
+    color: #fff;
+    background-color: #d1c2a9;
+}
+.lease-btmbox {
+    margin-bottom: 130px;
+}
+.lease-btmbox-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.lease-btmbox-inner a {
+    width: 360px;
+    border: 1px solid #004F2B;
+    display: inline-block;
+    letter-spacing: .05em;
+    padding: 1.2rem 3rem;
+    font-size: 18px;;
+    color: #004F2B;
+    text-align: center;
+    transition: all .3s ease;
+}
+.lease-btmbox-inner a:first-child {
+    margin-right: 50px;
+    display: none;
+}
+.lease-btmbox-inner a:hover {
+    color: #fff;
+    background-color: #004F2B;
+}

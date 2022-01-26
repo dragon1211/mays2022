@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+  .p-replace__mv{
+    min-height: 260px;
+    background: url("../images/telework/header.jpg") no-repeat center center / cover;
+  }
+
+  .p-replace__mv img{
+    display: none;
+  }
+
+  .p-replace__wrap{
+    max-width: inherit;
+  }
+
+  .p-replace__title01{
+    margin-top: -30px;
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+
+  .p-replace__title02{
+    margin-top: 20px;
+    font-size: 40px;
+    font-size: 4rem;
+  }
+
+  .p-replace__title03{
+    color: #333;
+    font-size: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.35;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+  }
+
+  .p-replace__title04{
+    color: #333;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+  }
+  
+  .p-replace__charm{
+    background: #eee;
+    padding: 10px 20px 40px 20px;
+    margin-top: 40px;
+  }
+
+  .p-replace__charm__flex{
+    display: block;
+  }
+
+  .p-replace__charm__col{
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .p-replace__charm__img{
+    min-height: 152px;
+    padding: 15px 20px;
+  }
+
+  .p-replace__charm__img__en{
+    font-size: 40px;
+    font-size: 4rem;
+  }
+
+  .p-replace__charm__img__ja{
+    margin-top: 12px;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+
+  .p-replace__charm__read{
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .p-replace__products__flex{
+    display: block;
+  }
+
+  .p-replace__products__col{
+    width: auto;
+    display: block;
+  }
+
+  .p-replace__products__col:nth-of-type(odd){
+    padding-right: 0;
+    padding-bottom: 30px;
+    border-right: none;
+  }
+
+  .p-replace__products__col:nth-of-type(even){
+    padding-left: 0;
+    padding-top: 30px;
+    border-left: none;
+    border-top: 2px solid #333;
+  }
+
+  .p-replace__products__list ul li,
+  .p-replace__products__read{
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-replace__products__read{
+    text-align: right;
+  }
+
+  .p-replace__products__remark{
+    margin-left: 1.3em;
+    text-indent: -1.3em;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .p-replace__flow{
+    margin-top: 50px;
+  }
+
+  .p-replace__flow__flex{
+    display: block;
+  }
+
+  .p-replace__flow__col{
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .p-replace__flow__col:nth-of-type(odd){
+    padding-right: 0;
+  }
+
+  .p-replace__flow__col:nth-of-type(even){
+    padding-left: 0;
+  }
+
+  .p-replace__flow__box{
+    padding: 30px;
+    margin-top: 80px;
+  }
+
+  .p-replace__flow__read{
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  
+  .p-replace__flow__read small{
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+
+  .p-replace__flow__heading{
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+}

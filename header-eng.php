@@ -32,6 +32,11 @@
     elseif (is_singular('eng-news') || is_post_type_archive('eng-news')) $englink = '/news/';
     ?>
 
+    <?php if (is_home() || is_front_page() || is_page('eng')): ?>
+    <link rel="stylesheet" href="/css/home.css" />
+    <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_home.css" /><?php endif; ?>
+    <script type="text/javascript" src="/js/home.js"></script>
+    <?php endif; ?>
     <?php if (is_page('about')): ?>
     <link rel="stylesheet" href="/css/about.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_about.css" /><?php } ?>
@@ -92,6 +97,13 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
+    <?php /* Slick */ ?>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/SLICK_OPTION.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/vendor/lity.css"/>
+    <script src="/js/vendor/lity.min.js"></script>
     <?php /* BowNow */ ?>
     <script id="_bownow_ts">
       var _bownow_ts = document.createElement('script');

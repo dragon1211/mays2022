@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.bg {transition-property:all;transition:0.3s linear;}
+.text {transition-property:all;transition:0.3s linear;}
+
+#biz0 {background:url(../images/business1.jpg) no-repeat center center;width:100%;height:400px;background-size:cover;position:fixed;top:0;left:0;z-index:-1;min-width:1024px;}
+#biz1 {text-align:center;box-sizing:border-box;height:400px;padding-top:142px;font-size:0;}
+#biz2 {padding-top:131px;padding-bottom:65px;background:white;}
+#biz21 {}
+#biz211 {text-align:center;margin-bottom:45px;font-size:0;}
+#biz212 {width:700px;text-align:justify;font-size:14px;line-height:24px;margin:0 auto 130px;}
+#biz213 {width:866px;margin:0 auto 145px;border-top:1px solid #afa593;border-bottom:1px solid #afa593;padding:35px 0;}
+#biz2131 {font-size:0;text-align:center;margin-bottom:35px;}
+#biz2132 {font-size:0;text-align:center;}
+.biz2132c {width:84px;height:84px;border-radius:42px;background:#f2f2f2;text-align:center;color:#666666;font-size:14px;line-height:21px;box-sizing:border-box;padding-top:23px;display:inline-block;margin:0 26px;}
+#biz22 {}
+#biz221 {text-align:center;font-weight:normal;margin-bottom:47px;}
+#biz2211 {color:#666666;font-size:36px;line-height:38px;letter-spacing:.15em;text-indent:.15em;font-family:'garamond-premier-pro-display',serif;}
+#biz2212 {color:#999999;font-size:12px;line-height:20px;letter-spacing:.1em;text-indent:.1em;}
+#biz222 {background:url(../images/business2.jpg) no-repeat center center;width:100%;height:570px;background-size:cover;text-align:center;font-size:0;box-sizing:border-box;padding-top:100px;margin-bottom:85px;}
+.biz222c {background:rgba(255,255,255,.85);display:inline-block;width:280px;height:370px;padding-top:40px;box-sizing:border-box;margin:0 35px;vertical-align:top;text-decoration:none;}
+.biz222c:first-child {margin-left:0;}
+.biz222c:last-child {margin-right:0;}
+.biz222c1 {line-height:79px;height:79px;text-align:center;margin-bottom:35px;}
+.biz222c1 img {vertical-align:middle;}
+.biz222c2 {font-size:14px;line-height:24px;text-align:justify;padding:0 33px;margin-bottom:28px;letter-spacing:.075em;color:#333;}
+.biz222c3 {font-size:0px;text-align:right;padding:0 33px;}
+#biz223 {text-align:center;font-size:0;margin-bottom:145px;}
+#biz223 svg {margin:0 50px;}
+#biz223 a:hover svg .bg {fill:#00502B;}
+#biz223 a:hover svg .text {fill:white;}

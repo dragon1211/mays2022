@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+#privacy0 {background-image:url(../images/sp_privacy.jpg);height:440px;min-width:0;}
+#privacy1 {height:440px;padding-top:167px;}
+#privacy2 {padding-top:170px;padding-bottom:288px;}
+#privacy21 {font-size:28px;width:auto;}
+#privacy211 {margin-bottom:90px;}
+#privacy212 {line-height:49px;max-height:100%;margin:0 40px 42px;letter-spacing:0;}
+#privacy213 {margin:0 40px 175px 114px;line-height:49px;max-height:100%;}
+#privacy213 li {text-indent:-50px;letter-spacing:0;}
+#privacy213 li::before {width:50px;}
+#privacy214 {max-height:100%;margin:0 40px 30px;}
+#privacy215 {line-height:49px;max-height:100%;margin:0 40px;}
+
+
+}

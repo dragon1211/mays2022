@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+#showroom0 {background:url(../images/showroom1.jpg) no-repeat center center;width:100%;height:400px;background-size:cover;position:fixed;top:0;left:0;z-index:-1;min-width:1024px;}
+#showroom1 {text-align:center;box-sizing:border-box;height:400px;padding-top:142px;font-size:0;}
+#showroom2 {padding-top:131px;padding-bottom:150px;background:white;}
+#showroom21 {}
+#showroom211 {text-align:center;margin-bottom:45px;font-size:0;}
+#showroom212 {width:700px;text-align:justify;font-size:14px;line-height:24px;margin:0 auto 80px;letter-spacing:.1em;}
+#showroom213 {margin-bottom:80px;height:570px;}
+#showroom214 {width:900px;margin:0 auto 78px;letter-spacing:.1em;}
+#showroom214::after {content:'';display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+#showroom2141 {float:left;width:600px;}
+#showroom21411 {margin-bottom:60px;}
+#showroom214111 {font-size:18px;line-height:32px;}
+#showroom214112 {color:#777777;font-size:12px;line-height:32px;text-indent:-34px;padding-left:34px;}
+#showroom214112 span {color:#a0937c;}
+#showroom21412 {font-size:16px;line-height:28px;}
+#showroom2142 {float:right;width:243px;font-size:16px;line-height:28px;}
+#showroom2142>div {position:relative;padding-left:16px;}
+#showroom2142>div::before {content:'';background:#a0937c;width:11px;height:11px;display:inline-block;position:absolute;top:9px;left:0;}
+#showroom21421 {margin-bottom:35px;}
+#showroom21422 {}
+#showroom215 {width:900px;background:#f7f7f7;font-size:14px;line-height:24px;padding:20px 0;text-align:center;margin:0 auto;}

@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+/* Color */
+
+
+/* Font */
+
+
+/* Introduction */
+
+section.concept-intro {
+  background: #fff;
+  padding-top: 131px;
+  padding-bottom: 140px;
+}
+
+section.concept-intro h2 {
+  color: #8A8886;
+  font-size: 30px;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  line-height: 50px;
+  text-align: center;
+}
+
+section.concept-intro p {
+  max-width: 700px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 45px auto 0;
+}
+
+
+/* Coordinate */
+
+.p-concept__tab-box picture img{
+  width: 100%;
+  height: auto;
+}
+
+.p-concept__tab-box video{
+  width: 100%;
+  height: auto;
+}
+
+.p-concept__tab-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.p-concept__tab-thumbnail{
+  width: calc(20% - 15px);
+  cursor: pointer;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.p-concept__tab-thumbnail.is-active,
+.p-concept__tab-thumbnail:hover {
+  opacity: .6;
+}
+
+.p-concept__tab-thumbnail img{
+  width: 100%;
+  height: auto;
+}
+
+section.concept-coordinate {
+  padding: 130px 0 140px;
+}
+
+section.concept-coordinate > * > h3 {
+  color: #7A7876;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  text-align: center;
+  text-indent: .1em;
+  margin: 38px 0 0;
+}
+
+section.concept-coordinate > * > p {
+  max-width: 624px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 12px auto 0;
+}
+
+.concept-coordinate-tab {
+  margin: 50px 0 0;
+}
+
+.concept-coordinate-tab-ctrl {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.concept-coordinate-tab-ctrl > button {
+  width: 100%;
+  height: 48px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid #BABCBC;
+  color: #8A8886;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.concept-coordinate-tab-ctrl > button > i {
+  font-family: "garamond-premier-pro-display", serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+
+.concept-coordinate-tab-ctrl > button > small {
+  font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.concept-coordinate-tab-ctrl > button.active,
+.concept-coordinate-tab-ctrl > button:hover {
+  background: #AFA593;
+  border-color: #AFA593;
+  color: #fff;
+}
+
+.concept-coordinate-tab-ctrl > button.active {
+  cursor: default;
+}
+
+.tab-content {
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section.coordinate-item {
+  padding: 54px 0 80px;
+}
+
+section.coordinate-item > h4 {
+  color: #7A7876;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: .1em;
+  text-indent: .1em;
+  text-align: center;
+}
+
+section.coordinate-item .sect-title-sub {
+  margin: 80px 0 0;
+}
+
+.coordinate-gallery > picture > img {
+  width: 100%;
+}
+
+.coordinate-gallery img.thumbnail {
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.coordinate-gallery img.thumbnail.active,
+.coordinate-gallery img.thumbnail:hover {
+  opacity: .6;
+}
+
+.coordinate-gallery img.thumbnail:not(.active) {
+  cursor: pointer;
+}
+
+.coordinate-gallery-thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 20px 0 0;
+}
+
+.coordinate-gallery-thumbs > li {
+  width: -webkit-calc(25% - 15px);
+  width: calc(25% - 15px);
+}
+
+.coordinate-gallery-thumbs > li > img {
+  width: 100%;
+}
+
+.coordinate-floorplan > a {
+  display: inline-block;
+  background: #fff;
+  position: relative;
+}
+
+.coordinate-floorplan > a::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/concept/icon_zoom.svg") no-repeat center center / 18px 18px, #ddd;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.coordinate-floorplan > a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.coordinate-floorplan > a:hover img {
+  opacity: 1;
+}
+
+.coordinate-floorplan > figure {
+  background: #fff;
+  border: 1px solid #BABCBC;
+  padding: 15px;
+  text-align: center;
+}
+
+.coordinate-floorplan > p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 15px 0 0;
+}
+
+.coordinate-product-item {
+  margin: 64px 0 0;
+}
+
+.coordinate-product-item > picture {
+  display: block;
+  text-align: center;
+}
+
+.coordinate-product-item > .txt > h6 {
+  color: #7A7876;
+  font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.coordinate-product-item > .txt > .price {
+  position: relative;
+  color: #7A7876;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  margin: 10px 0 0;
+  text-align: right;
+}
+
+.coordinate-product-item > .txt > .price > span {
+  position: relative;
+  z-index: 1;
+}
+
+.coordinate-product-item > .txt > .price:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  right: 100px;
+  bottom: 2px;
+  background: url("/images/concept/price-leader.svg");
+}
+
+.coordinate-product-item > .txt > p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 40px 0 0;
+}
+
+.coordinate-oproduct-list {
+  text-align: center;
+}
+
+.coordinate-oproduct-list > li {
+  width: 180px;
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  display: inline-block;
+  margin: 20px 10px 0;
+}
+
+.coordinate-oproduct-list > li > img {
+  width: 100%;
+}
+
+
+/* Brand Story */
+
+section.concept-brandstory {
+  background: #fff;
+  padding: 130px 0 140px;
+}
+
+section.concept-brandstory aside {
+  margin: 130px 0 0;
+}
+
+section.concept-brandstory .topics-carousel {
+  margin: 45px -10px;
+}
+
+ul.concept-service-list > li > a {
+  background: url() no-repeat center/cover;
+  color: #fff;
+  display: block;
+  padding: 37px 10px 35px;
+  text-align: center;
+}
+
+ul.concept-service-list > li > a:hover {
+  opacity: .6;
+}
+
+ul.concept-service-list > li > a > * {
+  display: block;
+}
+
+ul.concept-service-list > li > a > i {
+  font-size: 28px;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: .15em;
+  text-indent: .15em;
+  text-transform: uppercase;
+}
+
+ul.concept-service-list > li > a > strong {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: .1em;
+  text-indent: .1em;
+}
+
+@media (min-width: 641px) {
+  /* Coordinate */
+  .coordinate-plan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 48px -10px 0;
+  }
+  .coordinate-gallery {
+    width: 66.666666%;
+    padding: 0 10px;
+  }
+  .coordinate-floorplan {
+    width: 33.333333%;
+    padding: 0 10px;
+  }
+  .coordinate-product-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .coordinate-product-item > picture {
+    width: -webkit-calc(50% - 26px);
+    width: calc(50% - 26px);
+  }
+  .coordinate-product-item > .txt {
+    width: -webkit-calc(50% - 26px);
+    width: calc(50% - 26px);
+    margin: 0 0 0 52px;
+  }
+  .coordinate-product-item.even {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .coordinate-product-item.even > .txt {
+    margin: 0 52px 0 0;
+  }
+  /* Brand Story */
+  ul.concept-service-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  ul.concept-service-list > li {
+    width: -webkit-calc(50% - 14px);
+    width: calc(50% - 14px);
+    margin: 28px 0 0;
+  }
+}

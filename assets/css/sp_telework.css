@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+  .p-telework__mv{
+    min-height: 260px;
+    background: url("../images/telework/header.jpg") no-repeat center center / cover;
+  }
+
+  .p-telework__mv img{
+    display: none;
+  }
+
+  .p-telework__wrap{
+    max-width: inherit;
+  }
+
+  .p-telework__title01{
+    margin-top: -30px;
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+
+  .p-telework__title02{
+    margin-top: 20px;
+    font-size: 40px;
+    font-size: 4rem;
+  }
+
+  .p-telework__read{
+    margin-top: 25px;
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  .p-telework__read:first-of-type{
+    margin-top: 40px;
+  }
+
+  .p-telework__title03{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    font-size: 30px;
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+
+  .p-telework__title03 small{
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  
+  .p-telework__title03 span{
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .p-telework__tablist{
+    margin-top: 60px;
+  }
+
+  .p-telework__tablist li{
+    padding: 10px;
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  .p-telework__tabbox{
+    margin-top: 40px;
+  }
+
+  .p-telework__main{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .p-telework__main__img{
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  .p-telework__main__img__col__read{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .p-telework__main__img__remark{
+    margin-top: 20px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .p-telework__main__meta{
+    width: 100%;
+    padding: 0 30px 30px 30px;
+  }
+
+  .p-telework__main__meta__heading{
+    border-radius: 23px;
+    font-size: 30px;
+    font-size: 3rem;
+  }
+
+  .p-telework__main__meta__read{
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-telework__main__meta__table tr th,
+  .p-telework__main__meta__table tr td{
+    padding: 8px 10px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .p-telework__sub{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .p-telework__sub:nth-of-type(odd){
+    margin-left: 0;
+  }
+  
+  .p-telework__sub::before{
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-telework__sub__img{
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .p-telework__sub__img__col{
+    padding: 0 15px;
+  }
+
+  .p-telework__sub__img__col img{
+    max-height: inherit;
+  }
+
+  .p-telework__sub__img__col__icon{
+    margin: 6px 0;
+  }
+
+  .p-telework__sub__img__col__colorname{
+    padding: 0 6px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .p-telework__sub__img__heading{
+    margin-top: 15px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-telework__sub__meta{
+    width: 100%;
+    padding: 10px 30px 30px 30px;
+  }
+
+  .p-telework__sub__meta__heading{
+    width: 120px;
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+
+  .p-telework__sub__meta__read{
+    width: calc(100% - 120px);
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-telework__sub__meta__table tr th,
+  .p-telework__sub__meta__table tr td{
+    padding: 8px 10px;
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .p-telework__remark{
+    margin-top: 50px;
+  }
+
+  .p-telework__remark__read{
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}

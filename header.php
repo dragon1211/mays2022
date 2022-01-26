@@ -145,9 +145,9 @@
     $page_slug = $page_meta->post_name;
     $url = home_url().$_SERVER['REQUEST_URI'];
     if(is_home() || is_front_page()){
-      $lang_link = home_url().'/en/';
+      $lang_link = home_url().'/eng/';
     }
-    elseif(is_page('en')){
+    elseif(is_page('eng')){
       $lang_link = home_url();
     }
     else{

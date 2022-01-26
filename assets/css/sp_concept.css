@@ -1,0 +1,93 @@
+/* Introduction */
+section.concept-intro {
+  padding-top: 173px;
+  padding-bottom: 180px; }
+  section.concept-intro h2 {
+    font-size: 48px;
+    line-height: 60px; }
+  section.concept-intro p {
+    font-size: 24px;
+    line-height: 48px;
+    margin: 90px 0 0; }
+
+/* Coordinate */
+section.concept-coordinate {
+  padding: 173px 0 180px; }
+  section.concept-coordinate > * > h3 {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 76px 0 0; }
+  section.concept-coordinate > * > p {
+    font-size: 24px;
+    line-height: 48px;
+    margin: 30px 0 0; }
+
+.concept-coordinate-tab {
+  margin: 100px 0 0; }
+
+.concept-coordinate-tab-ctrl > button {
+  font-size: 24px;
+  height: 80px; }
+  .concept-coordinate-tab-ctrl > button > small {
+    display: block;
+    font-size: 14px;
+    margin: 4px 0 0; }
+
+section.coordinate-item {
+  padding: 72px 0 108px; }
+  section.coordinate-item > h4 {
+    font-size: 48px;
+    line-height: 60px; }
+
+.coordinate-plan {
+  margin: 64px 0 0; }
+
+.coordinate-floorplan {
+  margin: 20px 0 0; }
+  .coordinate-floorplan > p {
+    font-size: 24px;
+    line-height: 48px;
+    margin: 30px 0 0; }
+
+.coordinate-product-item {
+  margin: 64px 0 0; }
+  .coordinate-product-item > .txt > h6 {
+    font-size: 36px;
+    line-height: 50px; }
+  .coordinate-product-item > .txt > .price {
+    font-size: 24px; }
+    .coordinate-product-item > .txt > .price:after {
+      right: 180px; }
+  .coordinate-product-item > .txt > p {
+    font-size: 24px;
+    line-height: 40px; }
+
+.coordinate-oproduct-list {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 0 0; }
+  .coordinate-oproduct-list > li {
+    width: 100%;
+    margin: 0; }
+
+/* Brand Story */
+section.concept-brandstory {
+  padding-top: 173px;
+  padding-bottom: 180px; }
+  section.concept-brandstory .topics-carousel {
+    margin: 72px -10px; }
+  section.concept-brandstory aside {
+    margin: 173px 0 0; }
+
+ul.concept-service-list > li {
+  margin: 30px 0 0; }
+  ul.concept-service-list > li > a {
+    padding: 50px 20px 46px; }
+    ul.concept-service-list > li > a > i {
+      font-size: 44px;
+      line-height: 56px; }
+    ul.concept-service-list > li > a > strong {
+      font-size: 20px;
+      line-height: 32px; }

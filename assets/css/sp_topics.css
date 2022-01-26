@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+main {padding-top:86px;}
+#topics1 {height:450px;margin-bottom:325px;padding-top:107px;}
+#topics11 {height:556px;width:540px;padding-top:0;padding-left:0;}
+#topics11::before {content:none;}
+#topics111 {top:auto;bottom:0;right:-50px;left:auto;}
+#topics111 img {width:515px;height:263px;}
+#topics112 {font-size:48px;line-height:68px;margin-bottom:25px;width:auto;}
+#topics112::before {top:-36px;}
+#topics113 {font-size:24px;line-height:42px;width:auto;}
+#topics114 {left:0;}
+#topics114 img {height:22px;}
+#topics2 {width:580px;margin:0 auto 240px;}
+#topics2 h1 {font-size:42px;line-height:60px;margin-bottom:100px;}
+#topics2 h2 {font-size:36px;line-height:60px;padding-left:0;margin-bottom:60px;}
+#topics2 h2::before {display:inline-block;width:12px;height:40px;position:static;vertical-align:-6px;margin-right:24px;letter-spacing:.15em;}
+#topics2 h3 {font-size:30px;line-height:48px;margin-bottom:20px;}
+#topics2 p {font-size:46px;line-height:46px;margin-bottom:46px;}
+.topics2layout {margin:80px 0;}
+.topics2left {width:auto;float:none;margin-bottom:27px;margin-right:0;}
+.topics2left::after {content:'';display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+.topics2left .topics2img1 {width:270px;float:left;margin-right:20px;}
+.topics2left .topics2img2 {width:210px;float:left;text-align:left;}
+.topics2right {width:auto;float:none;margin-bottom:27px;margin-left:0;}
+.topics2right::after {content:'';display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+.topics2right .topics2img1 {width:270px;float:right;margin-left:20px;}
+.topics2right .topics2img2 {width:210px;float:right;text-align:right;}
+.topics2layout.fill .topics2left {width:289px;float:left;}
+.topics2layout.fill .topics2left .topics2img1 {width:auto;float:none;margin-right:0;}
+.topics2layout.fill .topics2left .topics2img2 {text-align:left;width:auto;float:none;}
+.topics2layout.fill .topics2right {width:289px;float:right;}
+.topics2layout.fill .topics2right .topics2img1 {width:auto;float:none;margin-left:0;}
+.topics2layout.fill .topics2right .topics2img2 {text-align:left;width:auto;float:none;}
+.topics2img {}
+.topics2img1 {margin-bottom:15px;}
+.topics2img2 {font-size:22px;line-height:28px;text-align:center;}
+.topics2imglarge .topics2img1 {width:100%;}
+.topics2imglarge .topics2img2 {text-align:left;}
+#topicslist {margin-bottom:120px;}
+
+}

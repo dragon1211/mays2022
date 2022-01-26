@@ -1,0 +1,165 @@
+@charset "utf-8";
+#company0 {
+  background: url(../images/company1.jpg) no-repeat center center;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-width: 1024px;
+}
+
+#company1 {
+  text-align: center;
+  box-sizing: border-box;
+  height: 400px;
+  padding-top: 142px;
+  font-size: 0;
+}
+
+#company2 {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  background: white;
+}
+
+#company21 {
+  width: 870px;
+  margin: 0 auto;
+  letter-spacing: .1em;
+}
+
+#company21 h3 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+#company21 dl {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#company21 dl::after {
+  content: '';
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#company21 dt {
+  float: left;
+  width: 335px;
+  margin-bottom: 26px;
+  clear: left;
+}
+
+#company21 dd {
+  float: left;
+  width: 535px;
+  margin-bottom: 26px;
+}
+
+#company21 dd dl {}
+
+#company21 dd dt {
+  clear: left;
+  float: left;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#company21 dd dd {
+  float: left;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#company22 {
+  max-width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+  letter-spacing: .1em;
+}
+
+#company22 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tab_container_r {
+  padding-bottom: 1em;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+.tab_container_r > input + label {
+  position: relative;
+  top: 140px;
+  left: calc(50vw + 528px);
+}
+.tab_container_r input:checked + .tab_item {
+  background-color: #d1c2a9;
+  color: #fff;
+}
+.tab_item {
+  position: relative;
+  width: 8rem;
+  padding: 8px 15px;
+  border: 1px solid #d1c2a9;
+  background-color: #fff;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  color: #d1c2a9;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+input[name="company_tab_item"] {
+  display: none;
+}
+.tab_content {
+  display: none;
+  margin-top: -68px;
+  padding: 1em 1em 0;
+  clear: both;
+  overflow: hidden;
+}
+#company_tab1:checked ~ #company_tab1_content {
+  display: block;
+}
+
+#company_tab2:checked ~ #company_tab2_content {
+  display: block;
+}
+
+@media screen and (max-width: 640px) {
+  .tab_container_r > input + label {
+    position: relative;
+    top: 50px;
+    left: 32vw;
+    margin: 0 auto;
+  }
+  .tab_item {
+    position: relative;
+    width: 18vw;
+    padding: 10px 0;
+    float: left;
+    font-size: 1.6rem;
+  }
+  .tab_container_r .tab_item {
+    -ms-writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+    -o-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+  }
+
+}

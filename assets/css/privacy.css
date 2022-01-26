@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#privacy0 {background:url(../images/privacy1.jpg) no-repeat center center;width:100%;height:400px;background-size:cover;position:fixed;top:0;left:0;z-index:-1;min-width:1024px;}
+#privacy1 {text-align:center;box-sizing:border-box;height:400px;padding-top:142px;font-size:0;}
+#privacy2 {padding-top:134px;padding-bottom:140px;background:white;}
+#privacy21 {font-size:14px;letter-spacing:.1em;width:700px;margin:0 auto;text-align:justify;}
+#privacy211 {text-align:center;margin-bottom:42px;font-size:0;line-height:1;}
+#privacy212 {margin-bottom:25px;line-height:24px;}
+#privacy213 {margin-bottom:85px;line-height:24px;margin-left:42px;list-style:none;counter-reset:ol_li;}
+#privacy213 li {text-indent:-25px;}
+#privacy213 li::before {counter-increment:ol_li;content:counter(ol_li)'.';color:#8a8986;display:inline-block;width:25px;text-indent:0;}
+#privacy214 {margin-bottom:12px;font-weight:bold;}
+#privacy215 {line-height:24px;}

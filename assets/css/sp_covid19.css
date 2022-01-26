@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+article.covid19 {
+	margin: 48px 0 0;
+}
+article.covid19 > section {
+	margin: 150px 0;
+}
+article.covid19 h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+article.covid19 h2 {
+	font-size: 40px;
+	line-height: 56px;
+}
+article.covid19 h3 {
+	font-size: 28px;
+	line-height: 48px;
+}
+article.covid19 ul {
+	font-size: 24px;
+	line-height: 48px;
+}
+
+div.columns > div:last-child {
+	margin: 40px 0 0;
+}

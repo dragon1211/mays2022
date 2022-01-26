@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+#company0 {background-image:url(../images/sp_company1.jpg);height:440px;min-width:0;}
+#company1 {height:440px;padding-top:167px;}
+#company2 {padding-top:165px;padding-bottom:195px;}
+#company21 {width:auto;margin:0 40px;text-align:center;}
+#company21 h3 {font-size:36px;line-height:50px;margin-bottom:70px;max-width:100%;}
+#company21 dl {font-size:28px;line-height:50px;}
+#company21 dt {float:none;width:auto;max-width:100%;margin-bottom:22px;clear:none;font-weight:bold;}
+#company21 dd {float:none;width:auto;max-width:100%;margin-bottom:100px;}
+#company21 dd dl {text-align:left;}
+#company21 dd dt {width:60%;font-weight:normal;margin-bottom:30px;}
+#company21 dd dd {width:40%;margin-bottom:30px;}
+
+
+}

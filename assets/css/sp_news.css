@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+#news1 {padding-top:250px;}
+#news11 {font-size:72px;line-height:84px;margin-bottom:100px;max-height:100%;}
+#news12 {width:auto;margin:0 30px 120px;border-top-width:4px;}
+.news12c {border-bottom-width:4px;font-size:28px;line-height:50px;padding:55px 20px;}
+.news12c1 {float:none;width:auto;text-align:left;padding:0;margin-bottom:20px;max-height:100%;}
+.news12c2 {float:none;width:auto;padding:0;}
+.news12c2 p {font-size:28px;line-height:50px;max-height:100%;}
+#news13 {font-size:40px;line-height:40px;}
+
+
+}

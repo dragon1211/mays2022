@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@media screen and (max-width: 640px) {
+
+    #faq0 {
+        background-image:url(../images/sp_faq1.jpg);
+        height:440px;
+        min-width:0;
+    }
+    #faq1 {
+        height:440px;
+        padding-top:167px;
+    }
+    #faq2 {
+        padding-top:100px;
+        padding-bottom:120px;
+    }
+    #faq21 {}
+    .tab_container {
+        width: 94vw;
+        padding-bottom: 1em;
+        margin: 0 auto;
+    }
+    .tab_item {
+        width: calc(100% / 2);
+        padding:2.8vw 0;
+        display: block;
+        float: left;
+        border: 1px solid #DEDFDF;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+    .tab_item:first-of-type {
+        border-radius: 3px 0 0 3px;
+    }
+    .tab_item:last-of-type {
+        border-radius: 0 3px 3px 0;
+    }
+    .tab_item:hover {
+        opacity: 0.75;
+    }
+    input[name="tab_item"] {
+        display: none;
+    }
+    .tab_content {
+        display: none;
+        padding: 7.8vw 3.1vw;
+        clear: both;
+        overflow: hidden;
+    }
+    #tab1:checked ~ #tab1_content,
+    #tab2:checked ~ #tab2_content {
+        display: block;
+    }
+    .tab_container input:checked + .tab_item {
+        background-color: #F3F3F3;
+    }
+    .catmenu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 7em;
+    }
+    .catmenu button {
+        width: 42vw;
+        height: 42vw;
+        display: inline-block;
+        margin-bottom: 4vw;
+        padding-top: 30vw;
+        border: none;
+        border-radius: 10px;
+        font: 22px bold;
+        color: #8A8886;
+    }
+    .catmenu #qa_catmenu01 {
+        background: url(../images/faq/catmenu_img01.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu02 {
+        background: url(../images/faq/catmenu_img02.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu03 {
+        background: url(../images/faq/catmenu_img03.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu04 {
+        background: url(../images/faq/catmenu_img04.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu05 {
+        background: url(../images/faq/catmenu_img05.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu06 {
+        background: url(../images/faq/catmenu_img08.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu07 {
+        background: url(../images/faq/catmenu_img06.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu08 {
+        background: url(../images/faq/catmenu_img07.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu #qa_catmenu09 {
+        background: url(../images/faq/catmenu_img08.png) center 6vw / 60% no-repeat, #F7F4EF;
+    }
+    .catmenu button:hover {
+        cursor: pointer;
+    }
+    .faq21c {}
+    .faq21c1 {margin-bottom:90px;}
+    .faq21c11 {font-size:72px;line-height:78px;max-height:100%;}
+    .faq21c12 {font-size:24px;line-height:28px;max-height:100%;}
+    .faq21c2 {
+        width: 86vw;
+        margin:140px auto 120px;
+        border-top-width:2px;
+    }
+    #qa_cat01,
+    #qa_cat07 {
+        display: block;
+    }
+    #qa_cat02,
+    #qa_cat03,
+    #qa_cat04,
+    #qa_cat05,
+    #qa_cat06,
+    #qa_cat08,
+    #qa_cat09 {
+        display: none;
+    }
+    .faq21c21 p {
+        border-width:2px;
+        letter-spacing:.025em;
+        position:relative;
+    }
+    .faq21c21 p:first-child {
+        position: relative;
+        background:url(../images/sp_faq2_c.png) no-repeat 94vw center;
+        font-size:22px;
+        line-height:32px;
+        font-feature-settings: "palt";
+        padding:7.4vw 5vw 6vw 16vw;
+        max-height:100%;
+    }
+    .faq21c21 p:first-child::before {
+        content: '';
+        display: inline-block;
+        width: 12vw;
+        height: 12vw;
+        background-image: url(../images/faq/qa_img_q.png);
+        background-size: contain;
+        vertical-align: middle;
+        position: absolute;
+        top: 2vw;
+        left: 3.12vw;
+    }
+    .faq21c21.open p:first-child {
+        background-image:url(../images/sp_faq2_o.png);
+    }
+    .faq21c21 p:last-child {
+        position: relative;
+        background-color:#F7F4EF;
+        font-size:22px;
+        line-height:33px;
+        padding:7.4vw 5vw 6vw 16vw;
+        display:none;
+        transition: all 0.2s ease;
+    }
+    .faq21c21 p:last-child::before {
+        content: '';
+        display: inline-block;
+        width: 12vw;
+        height: 12vw;
+        background-image: url(../images/faq/qa_img_a.png);
+        background-size: contain;
+        vertical-align: middle;
+        position: absolute;
+        top: 2vw;
+        left: 3.12vw;
+    }
+
+#privacy0 {background-image:url(../images/sp_privacy.jpg);height:440px;min-width:0;}
+#privacy1 {height:440px;padding-top:167px;}
+#privacy2 {padding-top:170px;padding-bottom:288px;}
+#privacy21 {font-size:28px;width:auto;}
+#privacy211 {margin-bottom:90px;}
+#privacy212 {line-height:49px;max-height:100%;margin:0 40px 42px;letter-spacing:0;}
+#privacy213 {margin:0 40px 175px 114px;line-height:49px;max-height:100%;}
+#privacy213 li {text-indent:-50px;letter-spacing:0;}
+#privacy213 li::before {width:50px;}
+#privacy214 {max-height:100%;margin:0 40px 30px;}
+#privacy215 {line-height:49px;max-height:100%;margin:0 40px;}
+
+
+}
