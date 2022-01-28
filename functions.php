@@ -11,15 +11,15 @@ function change_query_conditions($query) {
 	if ( $query->is_post_type_archive('gallery') ) {
 		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_post_type_archive('eng-gallery') ) {
-		$query->set( 'posts_per_page', '20' );
+		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_tax('casetype') ) {
-		$query->set( 'posts_per_page', '20' );
+		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_tax('eng-casetype') ) {
-		$query->set( 'posts_per_page', '20' );
+		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_post_type_archive('news') ) {
-		$query->set( 'posts_per_page', '20' );
+		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_post_type_archive('eng-news') ) {
-		$query->set( 'posts_per_page', '20' );
+		$query->set( 'posts_per_page', '18' );
 	}
 }
 add_action( 'pre_get_posts', 'change_query_conditions' );
