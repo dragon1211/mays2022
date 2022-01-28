@@ -26,12 +26,12 @@
 			</div>
 			<div id="case223">
 				<div class="case22w van">
-<?php while ( have_posts() ) : the_post(); $loopcounter++; ?>
-					<a class="case223c" href="<?php the_permalink(); ?>">
-						<div class="case223c1"><?php echo pickUpFirstImage('Image'); ?></div>
-						<div class="case223c2">CASE <span><?php echo post_custom('CaseNo'); ?></span></div>
-					</a>
-<?php endwhile; ?>
+					<?php while ( have_posts() ) : the_post(); $loopcounter++; ?>
+						<a class="case223c" href="<?php the_permalink(); ?>">
+							<div class="case223c1"><?php echo pickUpFirstImage('Image'); ?></div>
+							<div class="case223c2">CASE <span><?php echo post_custom('CaseNo'); ?></span></div>
+						</a>
+					<?php endwhile; ?>
 				</div>
 			</div>
 			<div id="case224">

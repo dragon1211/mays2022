@@ -74,7 +74,7 @@
     <ul class="p-top__gallery__slider is-pc">
       <?php
       $args = array(
-        'post_type' => 'gallery',
+        'post_type' => 'eng-gallery',
         'posts_per_page' => -1,
         'order' => 'DESC',
         'post_status' => 'publish'
@@ -95,7 +95,7 @@
     <ul class="p-top__gallery__slider is-sp">
       <?php
       $args = array(
-        'post_type' => 'gallery',
+        'post_type' => 'eng-gallery',
         'posts_per_page' => -1,
         'order' => 'DESC',
         'post_status' => 'publish'
@@ -204,7 +204,6 @@
     });
   });
 </script>
-<!-- <script type="text/javascript" src="/js/home.js"></script> -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM3IZ_-NHgFvOnOwp7y7IF-VPQBt07lBU&callback=initMap"></script>
 <?php endif; ?>
 

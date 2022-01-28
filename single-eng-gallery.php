@@ -25,7 +25,7 @@
 		<div id="cased3">
 			<div id="cased31"><?php previous_post_link('%link','&lt; BACK'); ?></div>
 			<div id="cased32"><?php next_post_link('%link','NEXT &gt;'); ?></div>
-			<div id="cased33"><a href="/gallery/" class="svg"><img src="/images/eng/case3.svg" width="170" height="55" alt="LIST" /></a></div>
+			<div id="cased33"><a href="/eng/gallery/" class="svg"><img src="/images/eng/case3.svg" width="170" height="55" alt="LIST" /></a></div>
 		</div>
 	</div>
 <?php get_footer('eng'); ?>
