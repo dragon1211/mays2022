@@ -25,12 +25,28 @@
 				</div>
 			</div>
 			<div id="case223">
-				<div class="case22w van">
+				<div class="case223_list">
 					<?php while ( have_posts() ) : the_post(); $loopcounter++; ?>
-						<a class="case223c" href="<?php the_permalink(); ?>">
-							<div class="case223c1"><?php echo pickUpFirstImage('Image'); ?></div>
-							<div class="case223c2">CASE <span><?php echo post_custom('CaseNo'); ?></span></div>
-						</a>
+					<a href="<?php the_permalink(); ?>" class="case223_card">
+					<div class="case223_card_img">
+						<?php
+							$arr = post_custom('Image');
+							foreach ($arr as $img) {
+								$imgs = wp_get_attachment_image_src($img,'full');
+								break;
+							}
+						?>
+						<div class="case223_card_img_photo" style="background-image:url(<?php echo $imgs[0]; ?>);"></div>
+					</div>
+					<div class="case223_card_meta">
+						<h4 class="case223_card_meta_heading">【<?php the_title(); ?>】</h4>
+						<p>Case No：<?php echo post_custom('CaseNo'); ?></p>
+						<p>Style：<?php echo get_eng_casestyle(); ?></p>
+						<p>Room：<?php echo get_eng_roomtype(); ?></p>
+						<p class="case223_card_meta_point">Point：<?php echo strip_tags(post_custom('Point')); ?></p>
+					</div>
+					<p class="case223_card_button">READ MORE</p>
+					</a>
 					<?php endwhile; ?>
 				</div>
 			</div>
