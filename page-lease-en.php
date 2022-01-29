@@ -331,7 +331,7 @@
 				However, if the contract has been renewed at least once, it can be cancelled by making a payment for the month in which you last use the service.
 			</p>
 			<div class="lease-faq-banner">
-        		<a href="/faq/">Other FAQs</a>
+        		<a href="/faq-en">Other FAQs</a>
 			</div>
 		</div>
     </div><!-- .container -->
