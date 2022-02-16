@@ -1,0 +1,131 @@
+#sdgs main{
+    max-width: 900px;
+    padding: 100px 15px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+#sdgs .title{
+    color: #8A8886;
+    font-size: 30px;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#sdgs section{
+    padding: 50px 0 0;
+}
+
+#sdgs section.top{
+    padding: 0;
+}
+
+#sdgs .sub-title{
+    color: #8A8886;
+    font-size: 25px;
+    font-family: "游明朝体", "Yu Mincho", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    margin: 0;
+}
+
+#sdgs .desc-box{
+    padding: 20px;
+    border: 1px solid #988459;
+}
+
+#sdgs .desc-box h3.desc-box__caption{
+    font-size: 22px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#sdgs .desc-box p{
+    font-size: 20px;
+}
+
+#sdgs .desc-box ul{
+    font-size: 18px;
+}
+#sdgs .desc-box ul a{
+    text-decoration: none;
+}
+
+#sdgs .society p, #sdgs .effort p{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+#sdgs .society .sub-title, #sdgs .effort .sub-title{
+    padding-top: 100px;
+    margin-top: -60px;
+}
+
+#sdgs .sdgs-img__right{
+    max-width: 400px;
+    margin-left: 15px;
+    float: right;
+}
+
+#sdgs .sdgs-img__right img, #sdgs .sdgs-img__left img{
+    width: 100%;
+}
+
+#sdgs .sdgs-img__left{
+    max-width: 400px;
+    margin-right: 15px;
+    float: left;
+}
+
+#sdgs .sign-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+#sdgs .sign-box p{
+    margin: 20px 0 0;
+}
+
+#sdgs .sign-box img{
+    max-width: 250px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.w-100{
+    width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+    #sdgs main{
+        padding-top: 50px;
+    }
+    #sdgs .society p, #sdgs .effort p{
+        font-size: 16px;
+    }
+    #sdgs .title{
+        font-size: 25px;
+    }
+    #sdgs .sub-title{
+        font-size: 20px;
+    }
+    #sdgs .sub-title small{
+        display: block;
+    }
+    #sdgs .desc-box{
+        margin-top: 10px;
+        padding: 15px;
+    }
+    #sdgs .desc-box h3.desc-box__caption{
+        font-size: 16px;
+    }
+    #sdgs .desc-box p, #sdgs .desc-box ul{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    #sdgs .sdgs-img__right, #sdgs .sdgs-img__left{
+        float: none;
+        margin: 20px auto;
+        max-width: 300px;
+    }
+}
