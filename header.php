@@ -12,6 +12,13 @@
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/function.js"></script>
     <script type="text/javascript" src="/js/ofi.min.js"></script>
+    <script type="text/javascript" src="/js/vegas/vegas.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/js/vegas/vegas.min.css"></link>
+
     <script>
       $(function(){
         objectFitImages('.ofi');
@@ -21,6 +28,9 @@
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_common.css" /><?php endif; ?>
     <link rel="stylesheet" type="text/css" href="/css/caselink.css">
+    <link rel="stylesheet" href="/css/purchase-contact.css" />
+    <link rel="stylesheet" href="/css/ideabook.css" />
+    <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_ideabook.css" /><?php endif; ?>
     <script type="text/javascript" src="/js/common_new.js"></script>
 
     <?php
@@ -28,9 +38,10 @@
     if (is_page()) $englink = '/eng/'.$post->post_name.'/';
     elseif (is_singular('gallery') || is_post_type_archive('gallery') || is_tax('casetype')) $englink = '/eng/gallery/';
     elseif (is_singular('news') || is_post_type_archive('news')) $englink = '/eng/news/';
+    elseif (is_singular('ideabook') || is_post_type_archive('ideabook')) $englink = '/eng/ideabook/';
     ?>
 
-    <?php if (is_home() || is_front_page() || is_page('en')): ?>
+    <?php if (is_home() || is_front_page() || is_page('eng')): ?>
     <link rel="stylesheet" href="/css/home.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_home.css" /><?php endif; ?>
     <script type="text/javascript" src="/js/home.js"></script>
@@ -59,7 +70,7 @@
     <link rel="stylesheet" href="/css/showroom.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_showroom.css" /><?php } ?>
     <script type="text/javascript" src="/js/showroom.js"></script>
-    <?php elseif (is_page(array('company', 'company-en'))): ?>
+    <?php elseif (is_page(array('company'))): ?>
     <link rel="stylesheet" href="/css/company.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_company.css" /><?php } ?>
     <script type="text/javascript" src="/js/company.js"></script>
@@ -94,7 +105,7 @@
     <link rel="stylesheet" href="/css/contact.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_contact.css" /><?php } ?>
     <script type="text/javascript" src="/js/ameyaCalendar.js"></script>
-    <script type="text/javascript" src="/js/contact.js"></script>
+    <?php if(is_page('eng') || is_parent_slug() === 'eng'){ ?><script type="text/javascript" src="/js/contact-eng.js"></script><?php } else { ?><script type="text/javascript" src="/js/contact.js"></script><?php } ?>
     <?php elseif (is_page('contact-sent')): ?>
     <link rel="stylesheet" href="/css/contact.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_contact.css" /><?php } ?>
@@ -107,7 +118,7 @@
     <link rel="stylesheet" href="/css/contact.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_contact.css" /><?php } ?>
     <script type="text/javascript" src="/js/contact_bizsta202107.js"></script>
-    <?php elseif (is_singular('gallery') || is_post_type_archive('gallery') || is_tax('casetype')): ?>
+    <?php elseif (is_singular('gallery') || is_post_type_archive('gallery') || is_tax('casetype') || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
     <link rel="stylesheet" href="/css/case.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_case.css" /><?php } ?>
     <script type="text/javascript" src="/js/case.js"></script>
@@ -116,18 +127,20 @@
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_topics.css" /><?php } ?>
     <script type="text/javascript" src="/js/topics.js"></script>
     <?php endif; ?>
-    <?php if (is_singular('ideabook') || is_post_type_archive('ideabook')): ?>
+    <?php if (is_singular('ideabook') || is_post_type_archive('ideabook') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook') ): ?>
     <link rel="stylesheet" href="/css/ideabook.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_ideabook.css" /><?php endif; ?>
+    <?php endif; ?>
+    <?php if (is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+    <link rel="stylesheet" href="/css/eng.css" />
+    <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_eng.css" /><?php endif; ?>
     <?php endif; ?>
     <?php /* Font */ ?>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     <?php /* Slick */ ?>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
     <script src="/js/SLICK_OPTION.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/vendor/lity.css"/>
     <script src="/js/vendor/lity.min.js"></script>
@@ -147,21 +160,21 @@
     if(is_home() || is_front_page()){
       $lang_link = home_url().'/eng/';
     }
-    elseif(is_page('eng')){
+    elseif(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')){
       $lang_link = home_url();
     }
     else{
-      if(strstr($url,'-en') == true){
-        $lang_link = str_replace('-en', '', $url);
-      }
-      else{
-        if(is_page(array('company','service','lease'))){
-          $lang_link = str_replace($page_slug, $page_slug.'-en', $url);
-        }
-        else{
-          $lang_link = '';
-        }
-      }
+    //  if(strstr($url,'-en') == true){
+    //    $lang_link = str_replace('-en', '', $url);
+    //  }
+    //  else{
+    //    if(is_page(array('company','service','lease'))){
+    //      $lang_link = str_replace($page_slug, $page_slug.'-en', $url);
+    //    }
+    //    else{
+          $lang_link = home_url().'/eng/';
+    //    }
+    //  }
     }
     ?>
     <script>
@@ -186,9 +199,9 @@
     <?php if(!is_page('agreement')): ?>
     <header class="md_header">
       <h1 class="md_header_logo">
-        <?php if(is_page(array('en','company-en','service-en','lease-en'))): ?>
-        <a href="<?php echo home_url(); ?>/en/">
-          <img src="/images/logo_new.svg" alt="MAYS 家具のリース・販売・インテリアコーディネートのメイズ" />
+        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+        <a href="<?php echo home_url(); ?>/eng/">
+          <img src="/images/logo_new.svg" alt="MAYS | Furniture leasing / sales / interior coordination" />
         </a>
         <?php else: ?>
         <a href="<?php echo home_url(); ?>">
@@ -197,14 +210,14 @@
         <?php endif; ?>
       </h1>
       <div class="md_header_banner">
-      <?php if(is_page(array('en','company-en','service-en','lease-en'))): ?>
-        <a href="<?php echo home_url(); ?>/en/contact/">Click here to request interior coordination</a>
+      <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+        <!--<a href="<?php echo home_url(); ?>/eng/contact/">Click here to request interior coordination</a>-->
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact/">インテリアコーディネートのご依頼はこちら</a>
         <?php endif; ?>
       </div>
       <div class="md_header_nav">
-        <?php if(is_page(array('en','company-en','service-en','lease-en'))): ?>
+        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
         <?php
         wp_nav_menu(array(
           'menu' => 'global-menu_en',
@@ -221,24 +234,15 @@
           'theme_location' => 'global_menu',
         )); ?>
         <?php endif; ?>
-      </div>
-      <?php
-      /*
-      <?php if (is_to_show_lang_option()) : ?>
-      <div class="md_language"><span>JP</span> | <a href="<?php echo $englink; ?>">EN</a></div>
-      <?php endif; ?>
-      */
-      ?>
-      <a id="mdmenu" href="#"><span></span><span></span><span></span></a>
-      <div class="sc_bottom_nav">
-        <?php if(is_page(array('en','company-en','service-en','lease-en'))): ?>
+        <div id="sc_bottom_nav">
+        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
         <?php
-        wp_nav_menu(array(
+        /*wp_nav_menu(array(
           'menu' => 'global-menu-2_en',
           'container' => '',
           'depth' => 2,
           'theme_location' => 'global_menu_2_en',
-        )); ?>
+        )); */?>
         <?php else: ?>
         <?php
         wp_nav_menu(array(
@@ -248,7 +252,16 @@
           'theme_location' => 'global_menu_2',
         )); ?>
         <?php endif; ?>
+        </div>
       </div>
+      <?php
+      /*
+      <?php if (is_to_show_lang_option()) : ?>
+      <div class="md_language"><span>JP</span> | <a href="<?php echo $englink; ?>">EN</a></div>
+      <?php endif; ?>
+      */
+      ?>
+      <a id="mdmenu" href="#"><span></span><span></span><span></span></a>
     </header>
     <?php endif; ?>
     <main>
