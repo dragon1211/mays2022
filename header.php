@@ -8,17 +8,10 @@
       <?php wp_title(' | ', true, 'right'); ?>
       <?php } ?>
       <?php bloginfo('name'); ?></title>
-
+      <?php wp_deregister_script( 'jquery' ); ?>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/function.js"></script>
     <script type="text/javascript" src="/js/ofi.min.js"></script>
-    <script type="text/javascript" src="/js/vegas/vegas.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="/js/vegas/vegas.min.css"></link>
-
     <script>
       $(function(){
         objectFitImages('.ofi');
@@ -28,10 +21,27 @@
     <link rel="stylesheet" type="text/css" href="/css/common.css">
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_common.css" /><?php endif; ?>
     <link rel="stylesheet" type="text/css" href="/css/caselink.css">
-    <link rel="stylesheet" href="/css/purchase-contact.css" />
-    <link rel="stylesheet" href="/css/ideabook.css" />
-    <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_ideabook.css" /><?php endif; ?>
     <script type="text/javascript" src="/js/common_new.js"></script>
+
+     <!-- User Insight PCDF Code Start :  -->
+<script type="text/javascript">
+var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = 55363;
+_uih['lg_id'] = '';
+_uih['fb_id'] = '';
+_uih['tw_id'] = '';
+_uih['uigr_1'] = ''; _uih['uigr_2'] = ''; _uih['uigr_3'] = ''; _uih['uigr_4'] = ''; _uih['uigr_5'] = '';
+_uih['uigr_6'] = ''; _uih['uigr_7'] = ''; _uih['uigr_8'] = ''; _uih['uigr_9'] = ''; _uih['uigr_10'] = '';
+_uic['uls'] = 1;
+
+/* DO NOT ALTER BELOW THIS LINE */
+/* WITH FIRST PARTY COOKIE */
+(function() {
+var bi = document.createElement('script');bi.type = 'text/javascript'; bi.async = true;
+bi.src = '//cs.nakanohito.jp/b3/bi.js';
+var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
+})();
+</script>
+<!-- User Insight PCDF Code End :  -->
 
     <?php
     $englink = '/eng/';
@@ -70,7 +80,7 @@
     <link rel="stylesheet" href="/css/showroom.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_showroom.css" /><?php } ?>
     <script type="text/javascript" src="/js/showroom.js"></script>
-    <?php elseif (is_page(array('company'))): ?>
+    <?php elseif (is_page('company')): ?>
     <link rel="stylesheet" href="/css/company.css" />
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_company.css" /><?php } ?>
     <script type="text/javascript" src="/js/company.js"></script>
@@ -127,11 +137,20 @@
     <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/sp_topics.css" /><?php } ?>
     <script type="text/javascript" src="/js/topics.js"></script>
     <?php endif; ?>
-    <?php if (is_singular('ideabook') || is_post_type_archive('ideabook') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook') ): ?>
+    <?php if (is_page('price')): ?>
+    <link rel="stylesheet" href="/css/price.css" />
+    <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_price.css" /><?php endif; ?>
+    <?php endif; ?>
+    <?php if (is_singular('ideabook') || is_post_type_archive('ideabook') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
     <link rel="stylesheet" href="/css/ideabook.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_ideabook.css" /><?php endif; ?>
     <?php endif; ?>
-    <?php if (is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+    <?php if (is_singular('product') || is_post_type_archive('product')): ?>
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog.css">
+    <!-- <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_product.css" /><?php endif; ?> -->
+    <?php endif; ?>
+    <?php if (is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
     <link rel="stylesheet" href="/css/eng.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_eng.css" /><?php endif; ?>
     <?php endif; ?>
@@ -140,7 +159,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     <?php /* Slick */ ?>
-   
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/SLICK_OPTION.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/vendor/lity.css"/>
     <script src="/js/vendor/lity.min.js"></script>
@@ -160,7 +181,7 @@
     if(is_home() || is_front_page()){
       $lang_link = home_url().'/eng/';
     }
-    elseif(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')){
+    elseif(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')){
       $lang_link = home_url();
     }
     else{
@@ -172,9 +193,9 @@
     //      $lang_link = str_replace($page_slug, $page_slug.'-en', $url);
     //    }
     //    else{
-          $lang_link = home_url().'/eng/';
-    //    }
-    //  }
+      $lang_link = home_url().'/eng/';
+      //    }
+      //  }
     }
     ?>
     <script>
@@ -199,7 +220,7 @@
     <?php if(!is_page('agreement')): ?>
     <header class="md_header">
       <h1 class="md_header_logo">
-        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+      <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
         <a href="<?php echo home_url(); ?>/eng/">
           <img src="/images/logo_new.svg" alt="MAYS | Furniture leasing / sales / interior coordination" />
         </a>
@@ -210,14 +231,14 @@
         <?php endif; ?>
       </h1>
       <div class="md_header_banner">
-      <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+      <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
         <!--<a href="<?php echo home_url(); ?>/eng/contact/">Click here to request interior coordination</a>-->
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact/">インテリアコーディネートのご依頼はこちら</a>
         <?php endif; ?>
       </div>
       <div class="md_header_nav">
-        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+      <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
         <?php
         wp_nav_menu(array(
           'menu' => 'global-menu_en',
@@ -235,14 +256,14 @@
         )); ?>
         <?php endif; ?>
         <div id="sc_bottom_nav">
-        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery')): ?>
+        <?php if(is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
         <?php
         /*wp_nav_menu(array(
           'menu' => 'global-menu-2_en',
           'container' => '',
           'depth' => 2,
           'theme_location' => 'global_menu_2_en',
-        )); */?>
+        ));*/ ?>
         <?php else: ?>
         <?php
         wp_nav_menu(array(

@@ -11,15 +11,15 @@ function change_query_conditions($query) {
 	if ( $query->is_post_type_archive('gallery') ) {
 		$query->set( 'posts_per_page', '18' );
 	} else if ( $query->is_post_type_archive('eng-gallery') ) {
-		$query->set( 'posts_per_page', '18' );
+		$query->set( 'posts_per_page', '20' );
 	} else if ( $query->is_tax('casetype') ) {
-		$query->set( 'posts_per_page', '18' );
+		$query->set( 'posts_per_page', '20' );
 	} else if ( $query->is_tax('eng-casetype') ) {
-		$query->set( 'posts_per_page', '18' );
+		$query->set( 'posts_per_page', '20' );
 	} else if ( $query->is_post_type_archive('news') ) {
-		$query->set( 'posts_per_page', '18' );
+		$query->set( 'posts_per_page', '20' );
 	} else if ( $query->is_post_type_archive('eng-news') ) {
-		$query->set( 'posts_per_page', '18' );
+		$query->set( 'posts_per_page', '20' );
 	}
 }
 add_action( 'pre_get_posts', 'change_query_conditions' );
@@ -124,10 +124,10 @@ function switchLanguage() {
 	global $post;
 	if (!$post->post_parent) return;
 	$p = get_post($post->post_parent);
-	if ($p->post_name==='eng') {
+	/*if ($p->post_name==='eng') {
 		include 'page-'.$post->post_name.'-eng.php';
 		exit;
-	}
+	}*/
 }
 
 /**
@@ -142,7 +142,7 @@ function mays_register_nav_menu() {
 	register_nav_menus(array(
       'global_menu' => __('Global Menu', 'mays2020'),
       'global_menu_en' => __('Global Menu (English)', 'mays2020'),
-      'footer_menu'  => __('Footer Menu', 'mays2020'),
+      /*'footer_menu'  => __('Footer Menu', 'mays2020'),*/
 	  'global_menu_2' => __('Global Menu 2', 'mays2020'),
       'global_menu_2_en' => __('Global Menu 2 (English)', 'mays2020'),
 	));
@@ -313,12 +313,18 @@ function page_navigation() {
       'total' => $wp_query->max_num_pages,
       'mid_size' => 3,
       'current' => ($paged ? $paged : 1),
-      'prev_text' => '&larr;',
+      'prev_text' => '&larr;',  
       'next_text' => '&rarr;',
     ));
     echo '<div class="nav-links">'."\n".$result."</div>\n";
   }
 }
 
-
+function is_parent_slug() {
+    global $post;
+    if ($post->post_parent) {
+        $post_data = get_post($post->post_parent);
+        return $post_data->post_name;
+    }
+}
 ?>
