@@ -145,11 +145,6 @@ var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi,
     <link rel="stylesheet" href="/css/ideabook.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_ideabook.css" /><?php endif; ?>
     <?php endif; ?>
-    <?php if (is_singular('product') || is_post_type_archive('product')): ?>
-    <link rel="stylesheet" href="/css/product.css" />
-    <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog.css">
-    <!-- <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_product.css" /><?php endif; ?> -->
-    <?php endif; ?>
     <?php if (is_page('eng') || is_parent_slug() === 'eng' || is_singular('eng-gallery') || is_post_type_archive('eng-gallery') || is_singular('eng-ideabook') || is_post_type_archive('eng-ideabook')): ?>
     <link rel="stylesheet" href="/css/eng.css" />
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_eng.css" /><?php endif; ?>
