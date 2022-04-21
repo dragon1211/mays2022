@@ -4,11 +4,11 @@
   padding-top: 131px;
   padding-bottom: 145px;
   background: white;
-  font-size: 16px;
-  font-family: 'garamond-premier-pro-display', serif;
+  font-size: 14px;
   max-width: 980px;
   width: 100%;
   margin: auto;
+  color: black;
 }
 
 #product .ttl{
@@ -32,32 +32,50 @@
   line-height: 20px;
   letter-spacing: .1em;
   text-indent: 0.1em;
+  font-family: 'garamond-premier-pro-display', serif;
 }
 
-/* product pagination css */
+/* ----------- content ------------ */
 
-#product #pagination{
+#product .content{
+  display: flex;
+}
+
+/* ---------- product category   ----------- */
+
+#product .category__list{
+  width: 150px;
+  margin-right: 20px;
+}
+
+#product .category__list li{
+  padding: 5px 0;
   text-align: center;
-  padding-top: 50px;
-  font-size: 14px;
-}
-#product #pagination>span{
-  padding: 7px;
-  border: 1px solid gray;
-  margin: 10px;
-}
-#product #pagination>a{
-  padding: 7px;
-  border: 1px solid gray;
-  margin: 10px;
-  font-size: 14px;
 }
 
-/* product item css */
+#product .category__list li a{
+  border-radius: 4px;
+  border: 1px solid #babcbc;
+  color: #222;
+  display: inline-block;
+  padding: 7px 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+}
+
+#product .category__list li a:hover, 
+#product .category__list li a.active{
+  background: #bbb;
+  color: white;
+}
+
+/* --------   product item ------------ */
 
 #product .product__list{
   display: flex;
   flex-wrap: wrap;
+  width: calc(100% - 160px);
 }
 
 #product .product__card{
@@ -66,15 +84,18 @@
   margin: 10px;
 }
 
+#product .product__card:hover{
+  background-color: #eee;
+  transition: .3s all;
+}
+
 #product .product__item{
-  padding: 15px;
-  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+  /* padding: 15px; */
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
 }
 
 #product .product__image {
   padding: 8px;
-  background: #fff;
-  border: 1px solid #eee;
   border-radius: 2px;
   text-align: center;
 }
@@ -86,4 +107,43 @@
   background-size: cover;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+#product .product__desp{
+  padding: 5px 10px 15px;
+  position: relative;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", arial, sans-serif;
+}
+
+#product .product__desp .brand{
+  font-size: 12px;
+  color: #b9b9b9;
+  line-height: normal;
+}
+
+#product .product__desp .name, #product .product__desp .price{
+  color: #333;
+  line-height: normal;
+  font-size: 14px;
+}
+
+#product .product__desp .name{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+#product .chbox{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#product #cased22 dt{
+  font-size: 14px;
+}
+
+#product #cased4 a{
+  font-size: 14px;
+  padding: 15px;
 }

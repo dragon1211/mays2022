@@ -84,6 +84,14 @@ function get_casestyle() {
 	}
 	return implode(' / ',$ret);
 }
+function get_product_brand() {
+	$cats = get_the_terms(get_the_ID(),'product_brand');
+	$ret = array();
+	foreach ((array)$cats as $cat) {
+		array_push($ret,$cat->name);
+	}
+	return implode(' / ',$ret);
+}
 function get_eng_casestyle() {
 	$cats = get_the_terms(get_the_ID(),'eng-casetype');
 	$ret = array();
