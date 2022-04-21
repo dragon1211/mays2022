@@ -11,9 +11,10 @@
       <?php wp_deregister_script( 'jquery' ); ?>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/common.css">
-    <link rel="stylesheet" href="/css/product.css" />
     <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog.css">
     <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog-md.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="/css/purchase-contact.css" />
+    <link rel="stylesheet" href="/css/product.css" />
     
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">

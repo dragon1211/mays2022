@@ -31,7 +31,7 @@
       <div class="product__list">
         <?php while ( have_posts() ) : the_post(); $loopcounter++; ?>
         <a class="product__card" href="<?php the_permalink(); ?>">
-          <div class="product__item">
+          <div class="product__item" id=<? echo "item".($loopcounter-1) ?>>
             <?php
               $arr = post_custom('Image');
               foreach ((array)$arr as $img) {
@@ -56,5 +56,6 @@
     <?php page_navigation(); ?>
   </section>
 
-  <?php get_template_part( 'page-content/product/product.footer' ); ?>
+<?php get_template_part( 'page-content/product/product.contact' ); ?>
+<?php get_template_part( 'page-content/product/product.footer' ); ?>
 
