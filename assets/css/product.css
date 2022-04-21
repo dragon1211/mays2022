@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+.top__image{
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+
+.top__image img{
+  width: 100%;
+}
+
+
 #product {
   padding-top: 130px;
   padding-bottom: 50px;
@@ -84,14 +95,15 @@
   margin: 10px;
 }
 
-#product .product__card:hover{
-  background-color: #eee;
-  transition: .3s all;
-}
-
 #product .product__item{
   /* padding: 15px; */
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+}
+
+#product .product__card:hover .product__item{
+  /* background-color: #eee; */
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+  transition: .3s all;
 }
 
 #product .product__image {
@@ -103,10 +115,8 @@
 #product .product__image .img{
   height: 150px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  background-position: center;
+  background-size: contain;
 }
 
 #product .product__desp{
@@ -143,15 +153,6 @@
   transform: scale(1.7);
 }
 
-#product #cased22 dd{
-  font-size: 16px;
-}
-
-#product #cased4 a{
-  font-size: 14px;
-  padding: 15px;
-}
-
 
 /* ---------- Contact Form --------- */
 
@@ -161,4 +162,88 @@
 
 #product-contact .wpcf7 .sub-title{
   margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------
+          Product Detail 
+----------------------------------- */
+
+#product-detail{
+  padding-bottom: 50px;
+  background: white;
+  font-size: 14px;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  color: black;
+}
+
+#product-detail #case2{
+  display: flex;
+  padding-bottom: 0px;
+}
+
+#product-detail #cased1{
+  max-width: 400px;
+  width: 100%;
+}
+
+#product-detail #cased11{
+  height: auto;
+}
+
+#product-detail #cased21{
+  text-align: left;
+}
+
+#product-detail #cased22 dt{
+  width: 125px;
+}
+
+#product-detail #cased22 dd{
+  font-size: 16px;
+}
+
+#product-detail #cased4 a{
+  font-size: 14px;
+  padding: 15px;
+}
+
+
+#product-detail .brand{
+  display: inline-flex;
+  color: #b9b9b9;
+  margin-bottom: 50px;
+} 
+#product-detail .brand dt{
+  width: 125px;
+}
+
+@media screen and (max-width: 1200px) {
+  #product-detail #case2{
+    display: block;
+  }
+
+  #product-detail #cased1{
+    max-width: 500px;
+  }
+
+  #product-detail #cased2{
+    max-width: 620px;
+    width: 100%;
+    margin: auto;
+  }
 }

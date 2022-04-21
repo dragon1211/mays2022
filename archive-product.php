@@ -1,14 +1,10 @@
 <?php get_template_part( 'page-content/product/product.header' ); ?>
-  <!-- .page-header -->
-  <div class="page-header" style="background-image: url(/images/gallery/header.jpg); margin: 0px;">
-        <h1><i>Product</i><strong>商品</strong></h1>
-  </div><!-- .page-header -->
+  
+  <div class="top__image">
+    <img src="/images/product/full.jpg" alt="full.jpg">
+  </div>
   
   <section id="product">
-    <h3 class="ttl">
-      <div class="ttl__header">PRODUCT LIST</div>
-      <div class="ttl__desp">商品一覧</div>
-    </h3>
     <div class="content">
       <div class="category__list">
         <p style="margin: 15px 0 5px 0"><strong>カテコリー</strong></p>
@@ -53,7 +49,7 @@
         <?php endwhile; ?>
       </div>
     </div>
-    <?php page_navigation(); ?>
+    <!-- <?php page_navigation(); ?> -->
   </section>
 
 <?php get_template_part( 'page-content/product/product.contact' ); ?>
