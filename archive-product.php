@@ -8,6 +8,11 @@
     <div class="content">
       <div class="category__list">
         <p style="margin: 15px 0 5px 0"><strong>カテコリー</strong></p>
+        <li>
+            <a href="/product" class = <?php if(!isset($term)) echo "active"; ?> >  
+              ALL
+            </a>
+        </li>
         <?php 
           if(!isset($term)) $term = '';
           $categories = get_terms( [
