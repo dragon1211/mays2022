@@ -20,9 +20,32 @@
     $(function(){
       
       $('.product__list.p-slider').slick({
-        rows: 2,
+        rows: 3,
         slidesPerRow: 3,
-        dots: true
+        dots: true,
+        responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                rows: 3,
+                slidesPerRow: 3,
+              }
+          },
+          {
+              breakpoint: 650,
+              settings: {
+                rows: 3,
+                slidesPerRow: 2,
+              }
+          },
+          {
+              breakpoint: 450,
+              settings: {
+                rows: 3,
+                slidesPerRow: 1,
+              }
+          }
+        ]
       });
 
       $('.purchase-contact-confirm').hide();

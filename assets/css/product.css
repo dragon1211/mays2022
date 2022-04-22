@@ -12,11 +12,10 @@
 
 
 #product {
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding: 100px 15px 50px;
   background: white;
   font-size: 14px;
-  max-width: 980px;
+  max-width: 1010px;
   width: 100%;
   margin: auto;
   color: black;
@@ -95,18 +94,18 @@
 
 #product .product__card{
   display: inline-block;
-  width: calc(33.33% - 20px) !important;
+  width: calc(100% - 20px);
   margin: 10px;
 }
 
 #product .product__item{
   /* padding: 15px; */
-  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
 }
 
 #product .product__card:hover .product__item{
   /* background-color: #eee; */
-  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%);
   transition: .3s all;
 }
 
@@ -150,7 +149,7 @@
 #product .chbox{
   position: absolute;
   bottom: 20px;
-  right: 10px;
+  right: 15px;
 }
 
 #product input[type=checkbox]{
@@ -160,6 +159,20 @@
 
 /* ---------- Contact Form --------- */
 
+#product-contact .purchase-contact-confirm{
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+#product-contact .purchase-contact-confirm .products .value div{
+  width: unset;
+  margin: 10px;
+}
+
+#product-contact .wpcf7{
+  padding: 0 15px;
+}
+
 #product-contact .wpcf7 form p:nth-last-child(2) input[type="submit"]{
   margin-top: 30px;
 }
@@ -168,10 +181,30 @@
   margin: 20px 0;
 }
 
+#product-contact .wpcf7 .d-flex label{
+  width: 200px;
+}
 
 
 
 
+
+
+@media screen and (max-width: 768px) {
+  #product{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  #product .content{
+    display: block;
+  }
+  #product .category__list{
+    margin: 0 auto 10px;
+  }
+  #product .product__list{
+    width: 100%;
+  }
+}
 
 
 
@@ -251,3 +284,7 @@
     margin: auto;
   }
 }
+
+
+
+
