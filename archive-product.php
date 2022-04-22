@@ -18,20 +18,39 @@
               foreach($categories as $cat){
           ?>
           <li>
-              <a href="<?php echo get_term_link($cat->term_id); ?>">
-                <?php echo $cat->name ?> 
+              <a href="<?php echo get_term_link($cat->term_id); ?>" 
+                class = "<?php if(strcmp($term, $cat->slug) == 0) echo "active"; ?>" >  
+                   <?php echo $cat->name ?> 
               </a>
           </li>
         <? } ?>
       </div>
-      <div class="product__list p-slider">
+      <div class="product__list p-slider" id="<?echo $term?>">
         <?php
-        $args = array(
-          'post_type' => 'product',
-          'posts_per_page' => -1,
-          'order' => 'DESC',
-          'post_status' => 'publish'
-        );
+          if($term === ''){
+            $args = array(
+              'post_type' => 'product',
+              'posts_per_page' => -1,
+              'order' => 'DESC',
+              'post_status' => 'publish'
+            );
+          } else {
+            $args = array(
+              'post_type' => 'product',
+              'posts_per_page' => -1,
+              'order' => 'DESC',
+              'post_status' => 'publish',
+              'tax_query' => array(
+                'relation' => 'OR',
+                array(
+                  'taxonomy' => 'product_category',
+                  'terms' => $term,
+                  'field' => 'slug',
+                  'operator' => 'IN'
+                ),
+              )
+            );
+          }
         ?>
         <?php $wp_query = new WP_Query( $args ); ?>
         <?php if( $wp_query->have_posts() ) : ?>
