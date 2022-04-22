@@ -89,6 +89,10 @@
   width: calc(100% - 160px);
 }
 
+#product .product__list .slick-list{
+  width: 100%;
+}
+
 #product .product__card{
   display: inline-block;
   width: calc(33.33% - 20px) !important;
