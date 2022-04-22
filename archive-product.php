@@ -24,33 +24,47 @@
           </li>
         <? } ?>
       </div>
-      <div class="product__list">
-        <?php while ( have_posts() ) : the_post(); $loopcounter++; ?>
-        <a class="product__card" href="<?php the_permalink(); ?>">
-          <div class="product__item" id=<? echo "item".($loopcounter-1) ?>>
-            <?php
-              $arr = post_custom('Image');
-              foreach ((array)$arr as $img) {
-                $imgs = wp_get_attachment_image_src($img,'full');
-                break;
-              }
-            ?>
-            <div class="product__image">
-              <div class="img" style="background-image:url(<?php echo $imgs[0]; ?>);"></div>
+      <div class="product__list p-slider">
+        <?php
+        $args = array(
+          'post_type' => 'product',
+          'posts_per_page' => -1,
+          'order' => 'DESC',
+          'post_status' => 'publish'
+        );
+        ?>
+        <?php $wp_query = new WP_Query( $args ); ?>
+        <?php if( $wp_query->have_posts() ) : ?>
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); $loopcounter++; ?>
+              
+          <a class="product__card" href="<?php the_permalink(); ?>">
+            <div class="product__item" id=<? echo "item".($loopcounter-1) ?>>
+              <?php
+                $arr = post_custom('Image');
+                foreach ((array)$arr as $img) {
+                  $imgs = wp_get_attachment_image_src($img,'full');
+                  break;
+                }
+              ?>
+              <div class="product__image">
+                <div class="img" style="background-image:url(<?php echo $imgs[0]; ?>);"></div>
+              </div>
+              <div class="product__desp">
+                <p class="brand"><?php echo get_product_brand(); ?></p>
+                <h3 class="name"><?php the_title(); ?></h3>
+                <p class="price"><?php echo strip_tags(post_custom('Price')); ?></p>
+                <div class="chbox"><input type="checkbox" /></div>
+              </div>
             </div>
-            <div class="product__desp">
-              <p class="brand"><?php echo get_product_brand(); ?></p>
-              <h3 class="name"><?php the_title(); ?></h3>
-              <p class="price"><?php echo strip_tags(post_custom('Price')); ?></p>
-              <div class="chbox"><input type="checkbox" /></div>
-            </div>
-          </div>
-        </a>
+          </a>
+
         <?php endwhile; ?>
+        <?php else: ?>
+        <?php endif; ?>
       </div>
     </div>
-    <!-- <?php page_navigation(); ?> -->
   </section>
+
 
 <?php get_template_part( 'page-content/product/product.contact' ); ?>
 <?php get_template_part( 'page-content/product/product.footer' ); ?>

@@ -18,6 +18,13 @@
 
   <script>
     $(function(){
+      
+      $('.product__list.p-slider').slick({
+        rows: 2,
+        slidesPerRow: 3,
+        dots: true
+      });
+
       $('.purchase-contact-confirm').hide();
       
       $('.wpcf7-form input[type="submit"]').click(function(e) {
@@ -26,7 +33,7 @@
         var products = '';
         let count = 0;
         $('.purchase-contact-confirm .products .value').empty();
-        var chboxes = $('.product__item input[type="checkbox"]');
+        var chboxes = $('.slick-slide:not(.slick-cloned) .product__item input[type="checkbox"]');
 
         for(let i in chboxes){
           if(chboxes[i].checked){

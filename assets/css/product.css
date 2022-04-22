@@ -91,7 +91,7 @@
 
 #product .product__card{
   display: inline-block;
-  width: calc(33.33% - 20px);
+  width: calc(33.33% - 20px) !important;
   margin: 10px;
 }
 
