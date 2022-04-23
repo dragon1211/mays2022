@@ -150,13 +150,10 @@ var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi,
     <?php if (is_mobile()): ?><link rel="stylesheet" href="/css/sp_eng.css" /><?php endif; ?>
     <?php endif; ?>
 
+    <!-- NEW PAGE - PRODUCT -->
     <?php if(is_post_type_archive('product') || is_singular('product') || is_tax('product_category')):  ?>
-      <link rel="stylesheet" type="text/css" href="/css/common.css">
-      <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog.css">
-      <link rel="stylesheet" href="/wp-content/themes/mays2020/dist/css/blog-md.css" media="(min-width: 641px)">
       <link rel="stylesheet" href="/css/purchase-contact.css" />
       <link rel="stylesheet" href="/css/product.css" />
-      <?php if (is_mobile()) { ?><link rel="stylesheet" href="/css/product_sp.css" /><?php } ?>
     <?php endif; ?>
 
     <?php /* Font */ ?>
