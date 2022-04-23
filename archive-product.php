@@ -30,7 +30,65 @@
           </li>
         <? } ?>
       </div>
-      <div class="product__list p-slider" id="<?echo $term?>">
+      <div class="product__list p-slider is-pc" id="<?echo $term?>">
+        <?php
+          if($term === ''){
+            $args = array(
+              'post_type' => 'product',
+              'posts_per_page' => -1,
+              'order' => 'DESC',
+              'post_status' => 'publish'
+            );
+          } else {
+            $args = array(
+              'post_type' => 'product',
+              'posts_per_page' => -1,
+              'order' => 'DESC',
+              'post_status' => 'publish',
+              'tax_query' => array(
+                'relation' => 'OR',
+                array(
+                  'taxonomy' => 'product_category',
+                  'terms' => $term,
+                  'field' => 'slug',
+                  'operator' => 'IN'
+                ),
+              )
+            );
+          }
+        ?>
+        <?php $wp_query = new WP_Query( $args ); ?>
+        <?php if( $wp_query->have_posts() ) : ?>
+        <?php while ($wp_query->have_posts()) : $wp_query->the_post(); $loopcounter++; ?>
+        
+        <div>
+          <a class="product__card" href="<?php the_permalink(); ?>">
+            <div class="product__item" id=<? echo "item".($loopcounter-1) ?>>
+              <?php
+                $arr = post_custom('Image');
+                foreach ((array)$arr as $img) {
+                  $imgs = wp_get_attachment_image_src($img,'full');
+                  break;
+                }
+              ?>
+              <div class="product__image">
+                <div class="img" style="background-image:url(<?php echo $imgs[0]; ?>);"></div>
+              </div>
+              <div class="product__desp">
+                <p class="brand"><?php echo get_product_brand(); ?></p>
+                <h3 class="name"><?php the_title(); ?></h3>
+                <p class="price"><?php echo strip_tags(post_custom('Price')); ?></p>
+                <div class="chbox"><input type="checkbox" /></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <?php endwhile; ?>
+        <?php else: ?>
+        <?php endif; ?>
+      </div>
+      <div class="product__list p-slider is-sp" id="<?echo $term?>">
         <?php
           if($term === ''){
             $args = array(

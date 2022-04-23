@@ -17,36 +17,44 @@
 
 
   <script>
-    $(function(){
-      
-      $('.product__list.p-slider').slick({
+    const breakPoint = 768;
+    function slickPc(){
+      $('.product__list.p-slider.is-pc').slick({
         rows: 3,
         slidesPerRow: 3,
-        dots: true,
-        responsive: [
-          {
-              breakpoint: 1024,
-              settings: {
-                rows: 3,
-                slidesPerRow: 3,
-              }
-          },
-          {
-              breakpoint: 650,
-              settings: {
-                rows: 3,
-                slidesPerRow: 2,
-              }
-          },
-          {
-              breakpoint: 450,
-              settings: {
-                rows: 3,
-                slidesPerRow: 1,
-              }
-          }
-        ]
+        dots: true
       });
+    }
+    function slickSmt(){
+      $('.product__list.p-slider.is-sp').slick({
+        rows: 3,
+        slidesPerRow: 2,
+        dots: true,
+      });
+    }
+
+    $(function(){
+      
+      // -----------------  initail  slider  ------------------ //
+      slickPc();
+      slickSmt();
+      const ua = navigator.userAgent;
+      if( window.innerWidth <= breakPoint || ua.indexOf('iPhone') > -1 || ua.indexOf('Android') > -1 || ua.indexOf('Mobile') > -1 || ua.indexOf('iPad') > -1){
+        $('.product__list.p-slider.is-pc').hide();
+      } else {
+        $('.product__list.p-slider.is-sp').hide();
+      }
+      $(window).on('resize',function(){
+        if( window.innerWidth <= breakPoint){
+          $('.product__list.p-slider.is-pc').hide();
+          $('.product__list.p-slider.is-sp').show();
+        } else {
+          $('.product__list.p-slider.is-sp').hide();
+          $('.product__list.p-slider.is-pc').show();
+        }
+      });
+      //-----------------------------------------------------------//
+
 
       $('.purchase-contact-confirm').hide();
       
